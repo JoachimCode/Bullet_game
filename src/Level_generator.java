@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 import static java.lang.Thread.sleep;
 
@@ -31,15 +32,27 @@ public class Level_generator {
                     });
                     current_enemy.engage(current_enemy.get_id());
                 }
-                for(Bullet current_bullet:list_of_bullets){
+
+                Iterator<Bullet> bullets = list_of_bullets.iterator();
+                while(bullets.hasNext()){
+                    Bullet current_bullet = bullets.next();
                     SwingUtilities.invokeLater(() -> {
                     current_bullet.fire();
                     });
                     if(current_bullet.check_hit_end()){
                         current_bullet.remove_sprite();
+                        bullets.remove();
                     }
-
                 }
+
+//                for(Bullet current_bullet:list_of_bullets){
+//                    SwingUtilities.invokeLater(() -> {
+//                    current_bullet.fire();
+//                    });
+//                    if(current_bullet.check_hit_end()){
+//                        current_bullet.remove_sprite();
+//                    }
+//                }
                 try {
                     sleep(sleep);
                 } catch (InterruptedException e) {
