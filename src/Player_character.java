@@ -7,6 +7,8 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 public class Player_character
 {
     int base_ms = 2;
+    private int current_health = 5;
+    private int max_health = 5;
     int height = 100;
     int width = 75;
     int x_cord = 500;
@@ -15,6 +17,7 @@ public class Player_character
     private int min_x = 10;
     private int max_x = 1920-width- 10;
     private int max_y = 1080-height -80;
+    private Entity_Image hp_bar;
 
     int movementspeed = 2;
     JFrame root;
@@ -26,6 +29,8 @@ public class Player_character
     public Player_character(Screen screen) throws IOException {
         this.screen = screen;
         player_character = new Entity_Image("player_character.png", x_cord, y_cord, width, height, "mc");
+        hp_bar = new Entity_Image("hp5.png",460,980, 1000, 35, "hp_bar");
+
     }
 
     public boolean check_bounds(String direction){
@@ -129,12 +134,38 @@ public class Player_character
     }
 
     public int get_height(){
-        return height;
+        rw_lock.readLock().lock();
+        int temp_height = height;
+        rw_lock.readLock().unlock();
+        return temp_height;
     }
 
+
     public int get_width(){
-        return width;
+        rw_lock.readLock().lock();
+        int temp_width = width;
+        rw_lock.readLock().unlock();
+        return temp_width;
     }
+    public int get_health(){
+        rw_lock.readLock().lock();
+        int hp = current_health;
+        rw_lock.readLock().unlock();
+        return hp;
+    }
+
+    public void lose_hp(){
+        rw_lock.writeLock().lock();
+        current_health = current_health - 1;
+        screen.refresh_frame();
+    }
+    public Entity_Image get_hp_bar(){
+        rw_lock.readLock().lock();
+        Entity_Image hp_bar_temp = hp_bar;
+        rw_lock.readLock().unlock();
+        return hp_bar_temp;
+    }
+
     public Entity_Image get_sprite(){
         return player_character;
     }

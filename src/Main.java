@@ -9,7 +9,6 @@ public class Main {
         Screen screen = new Screen();
         root.add(screen);
 
-
         Player_character character = new Player_character( screen);
         Level_generator level_one = new Level_generator(1, screen, character);
         Move listener = new Move(character, root);

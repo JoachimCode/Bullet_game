@@ -3,6 +3,7 @@ import java.awt.image.BufferedImage;
 import java.awt.image.VolatileImage;
 import java.nio.DoubleBuffer;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
@@ -15,7 +16,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 public class Screen extends Canvas {
     Toolkit t = Toolkit.getDefaultToolkit();
     private VolatileImage buffer;
-    ArrayList<Entity_Image> elements = new ArrayList<>();
+    LinkedList<Entity_Image> elements = new LinkedList<>();
     private final ReadWriteLock rw_lock = new ReentrantReadWriteLock();
 
     /**

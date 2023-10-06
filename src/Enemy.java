@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
@@ -17,13 +18,13 @@ public class Enemy {
     private int min_x = 10;
     private int max_x = 1920-width- 10;
     private int max_y = 1080-height -80;
-    private ArrayList<Bullet> list_of_bullets;
+    private LinkedList<Bullet> list_of_bullets;
     private final ReadWriteLock rw_lock = new ReentrantReadWriteLock();
     String direction = "left";
     int bullet_counter = 0;
 
 
-    public Enemy(Screen screen, ArrayList<Bullet> list_of_bullets, String filename, String id, int start_x, int start_y, int hp){
+    public Enemy(Screen screen, LinkedList<Bullet> list_of_bullets, String filename, String id, int start_x, int start_y, int hp){
         this.list_of_bullets = list_of_bullets;
         this.hp = hp;
         this.x_cord = start_x;

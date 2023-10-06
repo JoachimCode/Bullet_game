@@ -87,12 +87,6 @@ public class Bullet
             rw_lock.writeLock().unlock();
         }
     }
-    public int get_x(){
-        return x;
-    }
-    public int get_y(){
-        return y;
-    }
     public void fire(){
         if(direction == "down"){
             move_down();
@@ -104,7 +98,7 @@ public class Bullet
     }
 
     public boolean check_hit_end(){
-        if (x == min_x || x == max_x || y == min_y || y == max_y){
+        if (x == min_x || x == max_x || y == min_y || y == max_y-100){
             return true;
         }
         else return false;
@@ -112,5 +106,32 @@ public class Bullet
 
     public void remove_sprite(){
         screen.remove_from_element(self_sprite);
+    }
+
+    public int get_x(){
+        rw_lock.readLock().lock();
+        int tempx = x;
+        rw_lock.readLock().unlock();
+        return tempx;
+    }
+    public int get_y(){
+        rw_lock.readLock().lock();
+        int tempy = y;
+        rw_lock.readLock().unlock();
+        return tempy;
+    }
+
+    public int get_height(){
+        rw_lock.readLock().lock();
+        int temp_height = height;
+        rw_lock.readLock().unlock();
+        return temp_height;
+    }
+
+    public int get_width(){
+        rw_lock.readLock().lock();
+        int temp_width = width;
+        rw_lock.readLock().unlock();
+        return temp_width;
     }
 }
