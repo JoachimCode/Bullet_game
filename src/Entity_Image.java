@@ -72,6 +72,11 @@ public class Entity_Image{
             rw_lock.readLock().unlock();
             return current_id;
         }
+        public void change_image(String filename){
+            image = t.getImage(filename);
+            Image originalImage = image;
+            this.image = originalImage.getScaledInstance(width, height, Image.SCALE_SMOOTH);
+        }
 
         public void setId(String id) {
             this.id = id;

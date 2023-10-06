@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
 
 import static java.lang.Thread.sleep;
 
@@ -9,8 +10,9 @@ public class Level_generator {
     Screen screen;
     int sleep = 8;
     boolean level_on = true;
-    ArrayList<Enemy> list_of_enemies = new ArrayList<>();
-    ArrayList<Bullet> list_of_bullets = new ArrayList<>();
+    LinkedList<Enemy> list_of_enemies = new LinkedList<>();
+    LinkedList<Bullet> list_of_bullets = new LinkedList<>();
+
 
     Level_generator(int level, Screen screen, Player_character playerCharacter){
         this.player_character = playerCharacter;
@@ -44,6 +46,9 @@ public class Level_generator {
                         bullets.remove();
                     }
                 }
+                if(check_bullet_hit()){
+                    System.out.println("HIT");
+                }
 
 //                for(Bullet current_bullet:list_of_bullets){
 //                    SwingUtilities.invokeLater(() -> {
@@ -61,11 +66,27 @@ public class Level_generator {
             }
         }
     });
+    public boolean check_bullet_hit(){
+        boolean is_hit = false;
+        for(Bullet current_bullet:list_of_bullets){
+            if (
+                    current_bullet.get_x() < player_character.get_x() + player_character.get_width() &&
+                    current_bullet.get_x() + current_bullet.get_width() > player_character.get_x() &&
+                    current_bullet.get_y() < player_character.get_y() + player_character.get_height() &&
+                    current_bullet.get_y() + current_bullet.get_height() > player_character.get_y()
+             )
+            {
+                is_hit = true;
+            }
+        }
+        return is_hit;
+    }
     public void level_one(){
         screen.clear_screen();
         screen.add_element("grass_full.png", 0, 0, 1920, 1080, "bg");
+        screen.add_to_elements(player_character.get_hp_bar());
         screen.add_to_elements(player_character.get_sprite());
-        Enemy enemy = new Enemy(screen, list_of_bullets, "player_character.png", "enemy", 500, 200, 100);
+        Enemy enemy = new Enemy(screen, list_of_bullets, "enemy.png", "enemy", 500, 200, 100);
         list_of_enemies.add(enemy);
         screen.add_to_elements(enemy.get_sprite());
         level_one_thread.start();
