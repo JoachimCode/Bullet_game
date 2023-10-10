@@ -91,6 +91,15 @@ public class Bullet
         if(direction == "down"){
             move_down();
         }
+        else if(direction == "left"){
+            move_left();
+        }
+        else if(direction == "up"){
+            move_up();
+        }
+        else if(direction == "right"){
+            move_right();
+        }
     }
 
     public Entity_Image get_image(){

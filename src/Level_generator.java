@@ -12,16 +12,19 @@ public class Level_generator {
     boolean level_on = true;
     LinkedList<Enemy> list_of_enemies = new LinkedList<>();
     LinkedList<Bullet> list_of_bullets = new LinkedList<>();
+    Hit_checker hit_checker;
 
 
     Level_generator(int level, Screen screen, Player_character playerCharacter){
         this.player_character = playerCharacter;
         this.screen = screen;
+        this.hit_checker = new Hit_checker(list_of_bullets, player_character);
         switch(level){
             case(1):
                 level_one();
                 break;
         }
+
     }
 
     Thread level_one_thread = new Thread(new Runnable() {
@@ -41,14 +44,17 @@ public class Level_generator {
                     SwingUtilities.invokeLater(() -> {
                     current_bullet.fire();
                     });
+                    if(hit_checker.check_bullet_collision(current_bullet)){
+                        System.out.println("hit");
+                        current_bullet.remove_sprite();
+                        bullets.remove();
+                    }
                     if(current_bullet.check_hit_end()){
                         current_bullet.remove_sprite();
                         bullets.remove();
                     }
                 }
-                if(check_bullet_hit()){
-                    System.out.println("HIT");
-                }
+
 
 //                for(Bullet current_bullet:list_of_bullets){
 //                    SwingUtilities.invokeLater(() -> {
@@ -66,27 +72,13 @@ public class Level_generator {
             }
         }
     });
-    public boolean check_bullet_hit(){
-        boolean is_hit = false;
-        for(Bullet current_bullet:list_of_bullets){
-            if (
-                    current_bullet.get_x() < player_character.get_x() + player_character.get_width() &&
-                    current_bullet.get_x() + current_bullet.get_width() > player_character.get_x() &&
-                    current_bullet.get_y() < player_character.get_y() + player_character.get_height() &&
-                    current_bullet.get_y() + current_bullet.get_height() > player_character.get_y()
-             )
-            {
-                is_hit = true;
-            }
-        }
-        return is_hit;
-    }
+
     public void level_one(){
         screen.clear_screen();
         screen.add_element("grass_full.png", 0, 0, 1920, 1080, "bg");
         screen.add_to_elements(player_character.get_hp_bar());
         screen.add_to_elements(player_character.get_sprite());
-        Enemy enemy = new Enemy(screen, list_of_bullets, "enemy.png", "enemy", 500, 200, 100);
+        Enemy enemy = new Enemy(screen, list_of_bullets, "player_character.png", "enemy", 500, 200, 100);
         list_of_enemies.add(enemy);
         screen.add_to_elements(enemy.get_sprite());
         level_one_thread.start();

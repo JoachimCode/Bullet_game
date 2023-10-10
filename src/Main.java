@@ -11,11 +11,14 @@ public class Main {
 
         Player_character character = new Player_character( screen);
         Level_generator level_one = new Level_generator(1, screen, character);
-        Move listener = new Move(character, root);
+        Move listener = new Move(character, root, screen);
         screen.refresh_frame();
         root.setTitle("Game");
         root.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         root.setSize(1920, 1080);
         root.setVisible(true);
+        SwingUtilities.invokeLater(() -> {
+            screen.requestFocus();
+        });
     }
 }
