@@ -5,6 +5,8 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class Move extends Thread {
+    int bullet_counter = 0;
+
     volatile private boolean is_up = false;
     volatile private boolean is_down = false;
     volatile private boolean is_left = false;
@@ -14,6 +16,15 @@ public class Move extends Thread {
     private final ReadWriteLock left_lock = new ReentrantReadWriteLock();
     private final ReadWriteLock right_lock = new ReentrantReadWriteLock();
     private final ReadWriteLock down_lock = new ReentrantReadWriteLock();
+    volatile private boolean is_w = false;
+    volatile private boolean is_a = false;
+    volatile private boolean is_s = false;
+    volatile private boolean is_d = false;
+
+    private final ReadWriteLock w_lock= new ReentrantReadWriteLock();
+    private final ReadWriteLock a_lock = new ReentrantReadWriteLock();
+    private final ReadWriteLock s_lock = new ReentrantReadWriteLock();
+    private final ReadWriteLock d_lock = new ReentrantReadWriteLock();
     int sleep = 5;
     Player_character character;
 
@@ -21,7 +32,49 @@ public class Move extends Thread {
         @Override
         public void run() {
             while(true){
-                if (get_is_up() && get_is_right()) {
+                if (is_w){
+                    SwingUtilities.invokeLater(() -> {
+                    character.shoot("up");
+                    });
+//                   try {
+//                       sleep(sleep);
+//
+//                   } catch (InterruptedException e) {
+//                   } finally {
+//                   }
+                }
+                else if(is_d){
+                    SwingUtilities.invokeLater(() -> {
+                    character.shoot("right");
+                    });
+                    try {
+                        sleep(sleep);
+
+                    } catch (InterruptedException e) {
+                    } finally {
+                    }
+                }
+                else if(is_a){
+                    SwingUtilities.invokeLater(() -> {
+                    character.shoot("left");
+                });
+                    try {
+                        sleep(sleep);
+
+                    } catch (InterruptedException e) {
+                    }
+                }
+                else if(is_s){
+                    SwingUtilities.invokeLater(() -> {
+                    character.shoot("down");
+                     });
+                    try {
+                        sleep(sleep);
+
+                    } catch (InterruptedException e) {
+                    }
+                }
+                 if (get_is_up() && get_is_right()) {
                     SwingUtilities.invokeLater(() -> {
                         character.half_ms();
                         character.move_up_right();
@@ -29,7 +82,7 @@ public class Move extends Thread {
                     });
                     try {
                         sleep(sleep);
-                    } catch (InterruptedException e) {
+                    } catch (InterruptedException ignored) {
                         continue;
                     }
                 } else if (get_is_up() && get_is_left()) {
@@ -42,8 +95,6 @@ public class Move extends Thread {
                         sleep(sleep);
 
                     } catch (InterruptedException e) {
-                    } finally {
-                        continue;
                     }
                 } else if (get_is_down() && get_is_right()) {
                     SwingUtilities.invokeLater(() -> {
@@ -55,8 +106,6 @@ public class Move extends Thread {
                         sleep(sleep);
 
                     } catch (InterruptedException e) {
-                    } finally {
-                        continue;
                     }
                 } else if (get_is_down() && get_is_left()) {
                     SwingUtilities.invokeLater(() -> {
@@ -68,8 +117,6 @@ public class Move extends Thread {
                         sleep(sleep);
 
                     } catch (InterruptedException e) {
-                    } finally {
-                        continue;
                     }
                 } else if (get_is_up()) {
                     SwingUtilities.invokeLater(() -> {
@@ -79,8 +126,6 @@ public class Move extends Thread {
                         sleep(sleep);
 
                     } catch (InterruptedException e) {
-                    } finally {
-                        continue;
                     }
                 } else if (get_is_down()) {
                     SwingUtilities.invokeLater(() -> {
@@ -115,9 +160,7 @@ public class Move extends Thread {
         }
     });
 
-
-
-    public Move(Player_character character, JFrame root){
+    public Move(Player_character character, JFrame root, Screen screen){
         this.character = character;
         KeyListener listener;
         listener = new KeyListener() {
@@ -139,6 +182,19 @@ public class Move extends Thread {
                 else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
                     is_right = true;
                 }
+                else if (e.getKeyCode() == KeyEvent.VK_W) {
+                    is_w = true;
+                }
+                else if (e.getKeyCode() == KeyEvent.VK_A) {
+                    is_a = true;
+                }
+                else if (e.getKeyCode() == KeyEvent.VK_S) {
+                    is_s = true;
+                }
+                else if (e.getKeyCode() == KeyEvent.VK_D) {
+                    is_d = true;
+                }
+
             }
 
             @Override
@@ -155,10 +211,23 @@ public class Move extends Thread {
                 else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
                     is_right = false;
                 }
+                else if (e.getKeyCode() == KeyEvent.VK_W) {
+                    is_w = false;
+                }
+                else if (e.getKeyCode() == KeyEvent.VK_A) {
+                    is_a = false;
+                }
+                else if (e.getKeyCode() == KeyEvent.VK_S) {
+                    is_s = false;
+                }
+                else if (e.getKeyCode() == KeyEvent.VK_D) {
+                    is_d = false;
+                }
             }
         };
         thread.start();
-        root.addKeyListener(listener);
+        screen.addKeyListener(listener);
+
     }
 
 
@@ -187,6 +256,8 @@ public class Move extends Thread {
         right_lock.readLock().unlock();
         return temp;
     }
+
+
 
 
 }

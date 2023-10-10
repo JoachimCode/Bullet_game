@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
@@ -18,6 +19,7 @@ public class Player_character
     private int max_x = 1920-width- 10;
     private int max_y = 1080-height -80;
     private Entity_Image hp_bar;
+    LinkedList<Bullet> list_of_player_bullets = new LinkedList<>();
 
     int movementspeed = 2;
     JFrame root;
@@ -31,6 +33,11 @@ public class Player_character
         player_character = new Entity_Image("player_character.png", x_cord, y_cord, width, height, "mc");
         hp_bar = new Entity_Image("hp5.png",460,980, 1000, 35, "hp_bar");
 
+    }
+    public void shoot(String direction){
+        Bullet bullet = new Bullet(screen, "bullet.png", "bullet", x_cord, y_cord+height, direction);
+        screen.add_to_elements(bullet.get_image());
+        list_of_player_bullets.add(bullet);
     }
 
     public boolean check_bounds(String direction){
@@ -94,6 +101,7 @@ public class Player_character
             rw_lock.writeLock().unlock();
         }
     }
+
 
     public void move_up_right(){
         move_right();
