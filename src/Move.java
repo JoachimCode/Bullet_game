@@ -33,45 +33,47 @@ public class Move extends Thread {
         public void run() {
             while(true){
                 if (is_w){
-                    SwingUtilities.invokeLater(() -> {
-                    character.shoot("up");
-                    });
-//                   try {
-//                       sleep(sleep);
-//
-//                   } catch (InterruptedException e) {
-//                   } finally {
-//                   }
+                    if(bullet_counter == character.get_attack_speed()) {
+                        SwingUtilities.invokeLater(() -> {
+                            character.shoot("up");
+                        });
+                        bullet_counter = 0;
+                    }
+                    else {
+                        bullet_counter++;
+                    }
                 }
                 else if(is_d){
-                    SwingUtilities.invokeLater(() -> {
-                    character.shoot("right");
-                    });
-                    try {
-                        sleep(sleep);
-
-                    } catch (InterruptedException e) {
-                    } finally {
+                    if(bullet_counter == character.get_attack_speed()) {
+                        SwingUtilities.invokeLater(() -> {
+                            character.shoot("right");
+                        });
+                        bullet_counter = 0;
+                    }
+                    else {
+                        bullet_counter++;
                     }
                 }
                 else if(is_a){
-                    SwingUtilities.invokeLater(() -> {
-                    character.shoot("left");
-                });
-                    try {
-                        sleep(sleep);
-
-                    } catch (InterruptedException e) {
+                    if(bullet_counter == character.get_attack_speed()) {
+                        SwingUtilities.invokeLater(() -> {
+                            character.shoot("left");
+                        });
+                        bullet_counter = 0;
+                    }
+                    else {
+                        bullet_counter++;
                     }
                 }
                 else if(is_s){
-                    SwingUtilities.invokeLater(() -> {
-                    character.shoot("down");
-                     });
-                    try {
-                        sleep(sleep);
-
-                    } catch (InterruptedException e) {
+                    if(bullet_counter == character.get_attack_speed()) {
+                        SwingUtilities.invokeLater(() -> {
+                            character.shoot("down");
+                        });
+                        bullet_counter = 0;
+                    }
+                    else {
+                        bullet_counter++;
                     }
                 }
                  if (get_is_up() && get_is_right()) {
@@ -80,82 +82,46 @@ public class Move extends Thread {
                         character.move_up_right();
                         character.reset_ms();
                     });
-                    try {
-                        sleep(sleep);
-                    } catch (InterruptedException ignored) {
-                        continue;
-                    }
                 } else if (get_is_up() && get_is_left()) {
                     SwingUtilities.invokeLater(() -> {
                         character.half_ms();
                         character.move_up_left();
                         character.reset_ms();
                     });
-                    try {
-                        sleep(sleep);
-
-                    } catch (InterruptedException e) {
-                    }
                 } else if (get_is_down() && get_is_right()) {
                     SwingUtilities.invokeLater(() -> {
                         character.half_ms();
                         character.move_down_right();
                         character.reset_ms();
                     });
-                    try {
-                        sleep(sleep);
-
-                    } catch (InterruptedException e) {
-                    }
                 } else if (get_is_down() && get_is_left()) {
                     SwingUtilities.invokeLater(() -> {
                         character.half_ms();
                         character.move_down_left();
                         character.reset_ms();
                     });
-                    try {
-                        sleep(sleep);
-
-                    } catch (InterruptedException e) {
-                    }
                 } else if (get_is_up()) {
                     SwingUtilities.invokeLater(() -> {
                         character.move_up();
                     });
-                    try {
-                        sleep(sleep);
-
-                    } catch (InterruptedException e) {
-                    }
                 } else if (get_is_down()) {
                     SwingUtilities.invokeLater(() -> {
                         character.move_down();
                     });
-                    try {
-                        sleep(sleep);
-                    } catch (InterruptedException e) {
-                        continue;
-                    }
                 } else if (get_is_right()) {
                     SwingUtilities.invokeLater(() -> {
                         character.move_right();
                     });
-                    try {
-                        sleep(sleep);
-                    } catch (InterruptedException e) {
-                        continue;
-                    }
                 } else if (get_is_left()) {
                     SwingUtilities.invokeLater(() -> {
                         character.move_left();
                     });
-                    try {
-                        sleep(sleep);
-                    } catch (InterruptedException e) {
-                        continue;
-                    }
                 }
+                try {
+                    sleep(sleep);
 
+                } catch (InterruptedException e) {
+                }
             }
         }
     });

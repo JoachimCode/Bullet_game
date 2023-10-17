@@ -1,12 +1,16 @@
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 import javax.swing.*;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.Iterator;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
+
 public class Player_character
 {
+    int bullet_speed = 5;
+    int attack_cooldown = 30;
     int base_ms = 2;
     private int current_health = 5;
     private int max_health = 5;
@@ -19,7 +23,8 @@ public class Player_character
     private int max_x = 1920-width- 10;
     private int max_y = 1080-height -80;
     private Entity_Image hp_bar;
-    LinkedList<Bullet> list_of_player_bullets = new LinkedList<>();
+    private List<Bullet> list_of_player_bullets = new CopyOnWriteArrayList<>();
+
 
     int movementspeed = 2;
     JFrame root;
@@ -35,9 +40,47 @@ public class Player_character
 
     }
     public void shoot(String direction){
-        Bullet bullet = new Bullet(screen, "bullet.png", "bullet", x_cord, y_cord+height, direction);
+        rw_lock.readLock().lock();
+        Bullet bullet;
+        switch (direction){
+            case("down"):
+                bullet = new Bullet(screen, "bullet_down.png", "bullet", x_cord+width/2, y_cord+height, direction,
+                    bullet_speed);
+                break;
+            case("up"):
+                bullet = new Bullet(screen, "bullet_up.png", "bullet", x_cord+width/2, y_cord, direction,
+                    bullet_speed);
+                break;
+            case("left"):
+                bullet = new Bullet(screen, "bullet_left.png", "bullet", x_cord, y_cord+(height)/2, direction,
+                    bullet_speed);
+                break;
+            case("right"):
+                bullet = new Bullet(screen, "bullet_right.png", "bullet", x_cord+width, y_cord+(height)/2, direction,
+                    bullet_speed);
+                break;
+            default:
+                bullet = new Bullet(screen, "bullet_down.png", "bullet", x_cord, y_cord+height, direction,
+                    bullet_speed);
+                break;
+        }
         screen.add_to_elements(bullet.get_image());
         list_of_player_bullets.add(bullet);
+        rw_lock.readLock().unlock();
+    }
+
+    public Iterator<Bullet> get_player_bullet_list(){
+        rw_lock.readLock().lock();
+        Iterator<Bullet> player_bullet_list = list_of_player_bullets.iterator();
+        rw_lock.readLock().unlock();
+        return player_bullet_list;
+    }
+
+    public List<Bullet> get_player_bullet_array_list(){
+        rw_lock.readLock().lock();
+        List<Bullet> temp_list = list_of_player_bullets;
+        rw_lock.readLock().unlock();
+        return temp_list;
     }
 
     public boolean check_bounds(String direction){
@@ -134,7 +177,7 @@ public class Player_character
         return y;
     }
     public void half_ms(){
-        movementspeed = 3;
+        movementspeed = movementspeed;
     }
 
     public void reset_ms(){
@@ -176,5 +219,8 @@ public class Player_character
 
     public Entity_Image get_sprite(){
         return player_character;
+    }
+    public int get_attack_speed(){
+        return attack_cooldown;
     }
 }

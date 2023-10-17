@@ -71,6 +71,34 @@ public class Enemy {
         }
 
     }
+
+    public int get_x(){
+        rw_lock.readLock().lock();
+        int x = x_cord;
+        rw_lock.readLock().unlock();
+        return x;
+    }
+    public int get_y(){
+        rw_lock.readLock().lock();
+        int y = y_cord;
+        rw_lock.readLock().unlock();
+        return y;
+    }
+
+    public int get_height(){
+        rw_lock.readLock().lock();
+        int temp_height = height;
+        rw_lock.readLock().unlock();
+        return temp_height;
+    }
+
+
+    public int get_width(){
+        rw_lock.readLock().lock();
+        int temp_width = width;
+        rw_lock.readLock().unlock();
+        return temp_width;
+    }
     public void move_up(){
         if(check_bounds("up")) {
             rw_lock.writeLock().lock();
@@ -118,7 +146,7 @@ public class Enemy {
 
 
     public void shoot(){
-        Bullet bullet = new Bullet(screen, "bullet.png", "bullet", x_cord, y_cord+height, "down");
+        Bullet bullet = new Bullet(screen, "bullet_down.png", "bullet", x_cord, y_cord+height, "down", 1);
         screen.add_to_elements(bullet.get_image());
         list_of_bullets.add(bullet);
     }

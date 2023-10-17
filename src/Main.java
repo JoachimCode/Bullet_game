@@ -5,7 +5,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
         JFrame root = new JFrame();
-        //xroot.setLayout(new BorderLayout());
+        //root.setLayout(new BorderLayout());
         Screen screen = new Screen();
         root.add(screen);
 
