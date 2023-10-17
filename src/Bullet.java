@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
@@ -6,9 +7,9 @@ public class Bullet
 {
     private int x;
     private int y;
-    private int height = 40;
-    private int width = 20;
-    private int speed = 1;
+    private int height;
+    private int width;
+    private int speed;
     private boolean active;
     private int min_y = 10;
     private int min_x = 10;
@@ -18,7 +19,16 @@ public class Bullet
     private String direction;
     Screen screen;
     private Entity_Image self_sprite;
-    public Bullet(Screen screen, String filename, String id, int start_x, int start_y, String direction){
+    public Bullet(Screen screen, String filename, String id, int start_x, int start_y, String direction, int speed){
+        this.speed = speed;
+        if(direction == "up" || direction == "down"){
+            this.height = 40;
+            this.width = 20;
+        }
+        else if(direction == "left" || direction == "right"){
+            this.height = 20;
+            this.width = 40;
+        }
         this.direction = direction;
         this.x = start_x;
         this.y = start_y;
@@ -48,7 +58,7 @@ public class Bullet
             rw_lock.writeLock().lock();
             y = y - speed;
             self_sprite.setX(x);
-            self_sprite.setY(x);
+            self_sprite.setY(y);
             screen.refresh_frame();
             rw_lock.writeLock().unlock();
         }
@@ -64,6 +74,7 @@ public class Bullet
             screen.refresh_frame();
             rw_lock.writeLock().unlock();
         }
+
     }
 
     public void move_left(){
@@ -88,6 +99,7 @@ public class Bullet
         }
     }
     public void fire(){
+        rw_lock.writeLock().lock();
         if(direction == "down"){
             move_down();
         }
@@ -100,6 +112,7 @@ public class Bullet
         else if(direction == "right"){
             move_right();
         }
+        rw_lock.writeLock().unlock();
     }
 
     public Entity_Image get_image(){
@@ -107,14 +120,19 @@ public class Bullet
     }
 
     public boolean check_hit_end(){
-        if (x == min_x || x == max_x || y == min_y || y == max_y-100){
-            return true;
+        rw_lock.readLock().lock();
+        boolean is_hit = false;
+        if (x < min_x || x > max_x || y < min_y || y > max_y-100){
+            is_hit = true;
         }
-        else return false;
+        rw_lock.readLock().unlock();
+        return is_hit;
     }
 
     public void remove_sprite(){
+        SwingUtilities.invokeLater(() -> {
         screen.remove_from_element(self_sprite);
+        });
     }
 
     public int get_x(){
@@ -143,4 +161,6 @@ public class Bullet
         rw_lock.readLock().unlock();
         return temp_width;
     }
+
+
 }
