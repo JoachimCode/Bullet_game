@@ -12,12 +12,8 @@ public class Main {
         root.add(layeredPane);
         screen.setBounds(0, 0, 1920, 1080);
         layeredPane.add(screen, JLayeredPane.DEFAULT_LAYER);
+        Hud hud = new Hud(layeredPane);
 
-        JPanel hud = new JPanel();
-        hud.setBounds(0,0, 1000, 500);
-        hud.setVisible(true);
-        hud.setBackground(Color.red);
-        layeredPane.add(hud, JLayeredPane.PALETTE_LAYER);
 
         Player_character character = new Player_character( screen);
         Level_generator level_one = new Level_generator(1, screen, character);

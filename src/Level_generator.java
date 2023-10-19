@@ -95,7 +95,6 @@ public class Level_generator {
         reset_level();
         screen.clear_screen();
         screen.add_element("grass_full.png", 0, 0, 1920, 1080, "bg");
-        screen.add_to_elements(player_character.get_hp_bar());
         screen.add_to_elements(player_character.get_sprite());
         add_enemy("player_character.png", 500, 200, 100);
         level_one_thread.start();

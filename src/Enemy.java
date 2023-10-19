@@ -4,6 +4,7 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class Enemy {
+    private int attack_cooldown = 30;
     private boolean alive = true;
     private int hp;
     private int height = 100;
@@ -156,7 +157,7 @@ public class Enemy {
         if(alive){
             switch(id){
                 case("enemy"):
-                    if(bullet_counter == 20) {
+                    if(bullet_counter == attack_cooldown) {
                         shoot();
                         bullet_counter = 0;
                     }
