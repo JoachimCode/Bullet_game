@@ -1,0 +1,19 @@
+
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ìó¶8Æ¢°ï±1
+Y
+java:S1854"<Remove this useless assignment to local variable "listener".(Ìô÷‚8Ñ¢°ï±1
+Z
+java:S1854"=Remove this useless assignment to local variable "level_one".(¨ìó¶8Ñ¢°ï±1
+X	java:S125"<This block of commented-out lines of code should be removed.(ôèÐ–8Ñ¢°ï±1
+K
+java:S1481".Remove this unused "level_one" local variable.(¨ìó¶8Ü¢°ï±1
+J
+java:S1481"-Remove this unused "listener" local variable.(Ìô÷‚8Ü¢°ï±1
+k
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(”È÷üÿÿÿÿ8Ü¢°ï±1
+H
+java:S1602",Remove useless curly braces around statement(°›ìU8Ü¢°ï±1
+]
+java:S1612"AReplace this lambda with method reference 'screen::requestFocus'.(°›ìU8Ü¢°ï±1
+B
+java:S1128"%Remove this unused import 'java.awt'.(ï´µ©8Ü¢°ï±1

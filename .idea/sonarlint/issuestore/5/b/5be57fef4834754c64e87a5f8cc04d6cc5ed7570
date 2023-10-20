@@ -1,0 +1,41 @@
+
+c
+java:S1192#"FDefine a constant instead of duplicating this literal "right" 3 times.(‹¦­£8˜…ÜÆ²1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´×¢Å8™…ÜÆ²1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´×¢Å8™…ÜÆ²1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡€Ä8™…ÜÆ²1
+m	java:S117r"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü¿—¾8™…ÜÆ²1
+s	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘î”ÿÿÿÿÿ8™…ÜÆ²1
+s	java:S117–"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£›ä‰şÿÿÿÿ8™…ÜÆ²1
+^
+java:S4973]"<Strings and Boxed types should be compared using "equals()".(í©Æûÿÿÿÿ8š…ÜÆ²1
+Y
+java:S4973`"<Strings and Boxed types should be compared using "equals()".(Ñ£š8š…ÜÆ²1
+^
+java:S4973c"<Strings and Boxed types should be compared using "equals()".(†ªá†ùÿÿÿÿ8š…ÜÆ²1
+Y
+java:S4973f"<Strings and Boxed types should be compared using "equals()".(­ŠÜ8š…ÜÆ²1
+q	java:S116"PRename this field "min_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ì•çùÿÿÿÿ8±…ÜÆ²1
+q	java:S116"PRename this field "min_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯¤¶üÿÿÿÿ8±…ÜÆ²1
+l	java:S116"PRename this field "max_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô–é´8±…ÜÆ²1
+l	java:S116"PRename this field "max_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é¡ªÌ8±…ÜÆ²1
+n	java:S116"RRename this field "rw_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İë°®8±…ÜÆ²1
+r	java:S116"VRename this field "self_sprite" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğË©Î8±…ÜÆ²1
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñŒëîÿÿÿÿÿ8·…ÜÆ²1
+j	java:S100/"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÄ¢²8¹…ÜÆ²1
+i	java:S100;"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïàø38»…ÜÆ²1
+i	java:S100F"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ˆ™\8¼…ÜÆ²1
+o	java:S100Q"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş»½ÿÿÿÿÿ8½…ÜÆ²1
+o	java:S100l"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ”ãûûÿÿÿÿ8‘ÑİÆ²1
+j	java:S100p"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñë“8‘ÑİÆ²1
+j	java:S100z"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø³ƒ‰8’ÑİÆ²1
+H
+java:S1602{",Remove useless curly braces around statement(°›ìU8’ÑİÆ²1
+k	java:S100€"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­öí8“ÑİÆ²1
+k	java:S100†"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ÆÌâ8“ÑİÆ²1
+k	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Şò·Ø8”ÑİÆ²1
+j	java:S100”"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô¡Õ&8•ÑİÆ²1
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8Æ…ÜÆ²1
+L
+java:S1068"*Remove this unused "active" private field.(¿‡ÚÙÿÿÿÿÿ8Æ…ÜÆ²1
