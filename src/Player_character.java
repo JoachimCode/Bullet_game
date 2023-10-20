@@ -14,8 +14,8 @@ public class Player_character
     int base_ms = 2;
     private int current_health = 5;
     private int max_health = 5;
-    int height = 100;
-    int width = 75;
+    int height = 80;
+    int width = 60;
     int x_cord = 500;
     int y_cord = 500;
     private int min_y = 10;
