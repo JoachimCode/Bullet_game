@@ -31,7 +31,6 @@ public class Move extends Thread {
     private Thread thread = new Thread(new Runnable() {
         @Override
         public void run() {
-            while(true){
                 if (is_w){
                     if(bullet_counter == character.get_attack_speed()) {
                         SwingUtilities.invokeLater(() -> {
@@ -117,12 +116,6 @@ public class Move extends Thread {
                         character.move_left();
                     });
                 }
-                try {
-                    sleep(sleep);
-
-                } catch (InterruptedException e) {
-                }
-            }
         }
     });
 
@@ -191,7 +184,7 @@ public class Move extends Thread {
                 }
             }
         };
-        thread.start();
+        //thread.start();
         screen.addKeyListener(listener);
 
     }
@@ -222,7 +215,9 @@ public class Move extends Thread {
         right_lock.readLock().unlock();
         return temp;
     }
-
+    public Thread get_thread(){
+        return thread;
+    }
 
 
 

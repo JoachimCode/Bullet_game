@@ -18,7 +18,7 @@ public class Level_generator {
     LinkedList<Bullet> list_of_bullets = new LinkedList<>();
     List<Bullet> list_of_player_bullets = new CopyOnWriteArrayList<>();
     Hit_checker hit_checker;
-    private int invurnable_time = 100;
+    private int invurnable_time = 150;
     private int invurnable_counter = 0;
     private boolean is_hit = false;
 
@@ -39,8 +39,18 @@ public class Level_generator {
     Thread level_one_thread = new Thread(new Runnable() {
         @Override
         public void run() {
-            while(level_on){
+
                 is_invurnable();
+
+                Iterator<Enemy> enemies = list_of_enemies.iterator();
+                while(enemies.hasNext()){
+                    Enemy current_enemy = enemies.next();
+                    if(current_enemy.get_hp() <= 0){
+                        current_enemy.remove_sprite();
+                        enemies.remove();
+                    }
+                }
+
                 for(Enemy current_enemy:list_of_enemies){
                     SwingUtilities.invokeLater(() -> {
                         current_enemy.movement_algoritm();
@@ -86,29 +96,23 @@ public class Level_generator {
                     for(Enemy enemy:list_of_enemies){
                         if(hit_checker.check_player_bullet_collision(current_bullet, enemy)){
                             System.out.println("Enemy hit");
+                            enemy.lose_hp();
                             current_bullet.remove_sprite();
                             current_list_of_player_bullets.remove(i);
                             i--;
                         }
                     }
                 }
-                try {
-                    sleep(sleep);
-                } catch (InterruptedException e) {
-                    continue;
-                }
-            }
         }
     });
 
     public void level_one(){
-
         reset_level();
         screen.clear_screen();
         screen.add_element("grass_full.png", 0, 0, 1920, 1080, "bg");
         screen.add_to_elements(player_character.get_sprite());
-        add_enemy("player_character.png", 500, 200, 100);
-        level_one_thread.start();
+        add_enemy("player_character.png", 500, 200, 10);
+        //level_one_thread.start();
     }
     public void add_player_bullet(Bullet bullet){
         list_of_player_bullets.add(bullet);
@@ -147,5 +151,8 @@ public class Level_generator {
         else{
             return false;
         }
+    }
+    public Thread get_level_one_thread(){
+        return level_one_thread;
     }
 }

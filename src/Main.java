@@ -20,6 +20,7 @@ public class Main {
         Level_generator level_one = new Level_generator(1, screen, character, hud);
         Move listener = new Move(character, root, screen);
         screen.refresh_frame();
+        Game_time game_time = new Game_time(level_one, listener);
         root.setTitle("Game");
         root.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         root.setSize(1920, 1080);

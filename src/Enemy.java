@@ -4,7 +4,7 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class Enemy {
-    private int attack_cooldown = 30;
+    private int attack_cooldown = 80;
     private int long_attack_cd = 60;
     private boolean alive = true;
     private int hp;
@@ -12,7 +12,7 @@ public class Enemy {
     private int width = 75;
     private int x_cord;
     private int y_cord;
-    private int movementspeed = 4;
+    private int movementspeed = 3;
     Screen screen;
     private Entity_Image self_sprite;
     int bullet_speed = 1;
@@ -201,6 +201,25 @@ public class Enemy {
                     break;
             }
         }
+    }
+
+    public int get_hp(){
+        rw_lock.readLock().lock();
+        int temp_hp = hp;
+        rw_lock.readLock().unlock();
+        return temp_hp;
+    }
+
+    public void remove_sprite(){
+        rw_lock.writeLock().lock();
+        screen.remove_from_element(self_sprite);
+        rw_lock.writeLock().unlock();
+    }
+
+    public void lose_hp(){
+        rw_lock.writeLock().lock();
+        hp--;
+        rw_lock.writeLock().unlock();
     }
 
     public String get_id(){

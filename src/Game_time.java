@@ -1,18 +1,32 @@
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
 
-public class Game_time extends TimerTask
+public class Game_time
 {
-  private int time_out = 10;
-  @Override
-  public void run() {
+  private Timer timer;
+  private Level_generator level;
+  private Move move;
+  public Game_time(Level_generator level, Move move)
+  {
+    this.level = level;
+    this.move = move;
+    timer = new Timer();
+    TimerTask task = new TimerTask() {
 
-    try {
-      TimeUnit.SECONDS.sleep(time_out);
-    } catch (InterruptedException e) {
-      throw new RuntimeException(e);
-    }
+      @Override
+      public void run() {
+        run_all();
+      }
+    };
+    //Wait 1 second before first execution and then
+    //execute every second
+    timer.schedule(task, 1000,5);
   }
 
+  public void run_all(){
+    move.get_thread().run();
+    level.get_level_one_thread().run();
+  }
 }
