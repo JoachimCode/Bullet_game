@@ -14,7 +14,7 @@ public class Bullet
     private int min_y = 10;
     private int min_x = 10;
     private int max_x = 1920-width- 10;
-    private int max_y = 1080-height -80;
+    private int max_y = 880-height+20;
     private final ReadWriteLock rw_lock = new ReentrantReadWriteLock();
     private String direction;
     Screen screen;

@@ -1,34 +1,41 @@
 
-[
-java:S1192/"FDefine a constant instead of duplicating this literal "right" 4 times.(¬ÚÚ
-†
-java:S1319"pThe type of "list_of_bullets" should be an interface such as "List" rather than the implementation "LinkedList".(©…ÊÃ
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©…ÊÃ
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©…ÊÃ
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©…ÊÃ
-f	java:S117+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡€Ä
-g
-java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(Ò“ÿšùÿÿÿÿ
-f	java:S116"QRename this field "x_cord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ›úÑ
-k	java:S116"QRename this field "y_cord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö®‚åüÿÿÿÿ
-k	java:S116"VRename this field "self_sprite" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğË©Î
-j	java:S116"PRename this field "min_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ì•çùÿÿÿÿ
-j	java:S116"PRename this field "min_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯¤¶üÿÿÿÿ
-e	java:S116"PRename this field "max_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô–é´
-e	java:S116"PRename this field "max_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é¡ªÌ
-o	java:S116"ZRename this field "list_of_bullets" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦¼«î
-g	java:S116"RRename this field "rw_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İë°®
-s	java:S116"YRename this field "bullet_counter" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡¸Ãşÿÿÿÿ
-c	java:S100%"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£€ù
-h	java:S100*"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñŒëîÿÿÿÿÿ
-h	java:S100;"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ø–üÿÿÿÿ
-c	java:S100J"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÄ¢²
-b	java:S100V"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïàø3
-b	java:S100a"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ˆ™\
-h	java:S100l"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş»½ÿÿÿÿÿ
-=	java:S131""Add a default case to this switch.(Ò“ÿšùÿÿÿÿ
-d	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡˜¨–
-F
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
-A
-java:S1068"&Remove this unused "hp" private field.(­¹Ñ£ÿÿÿÿÿ
+b
+java:S11920"FDefine a constant instead of duplicating this literal "right" 4 times.(¬ÚÚ8ÛÕ´ä´1
+
+java:S1319"pThe type of "list_of_bullets" should be an interface such as "List" rather than the implementation "LinkedList".(©…ÊÃ8ÛÕ´ä´1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©…ÊÃ8ÛÕ´ä´1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©…ÊÃ8ÛÕ´ä´1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©…ÊÃ8ÛÕ´ä´1
+m	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡€Ä8ÛÕ´ä´1
+r	java:S117["QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘î”ÿÿÿÿÿ8ÛÕ´ä´1
+r	java:S117c"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£›ä‰şÿÿÿÿ8ÛÕ´ä´1
+n
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(Ò“ÿšùÿÿÿÿ8ÛÕ´ä´1
+v	java:S116"ZRename this field "attack_cooldown" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔÑ¾Ï8Ö´ä´1
+m	java:S116"QRename this field "x_cord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ›úÑ8Ö´ä´1
+r	java:S116"QRename this field "y_cord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö®‚åüÿÿÿÿ8Ö´ä´1
+r	java:S116"VRename this field "self_sprite" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğË©Î8Ö´ä´1
+q	java:S116"PRename this field "min_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ì•çùÿÿÿÿ8Ö´ä´1
+q	java:S116"PRename this field "min_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯¤¶üÿÿÿÿ8Ö´ä´1
+l	java:S116"PRename this field "max_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô–é´8Ö´ä´1
+l	java:S116"PRename this field "max_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é¡ªÌ8Ö´ä´1
+v	java:S116"ZRename this field "list_of_bullets" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦¼«î8Ö´ä´1
+n	java:S116"RRename this field "rw_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İë°®8Ö´ä´1
+z	java:S116"YRename this field "bullet_counter" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡¸Ãşÿÿÿÿ8Ö´ä´1
+j	java:S100&"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£€ù8›Ö´ä´1
+o	java:S100+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñŒëîÿÿÿÿÿ8›Ö´ä´1
+o	java:S100<"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ø–üÿÿÿÿ8Ö´ä´1
+j	java:S100L"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­öí8Ö´ä´1
+j	java:S100R"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ÆÌâ8Ö´ä´1
+j	java:S100Y"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Şò·Ø8Ö´ä´1
+i	java:S100a"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô¡Õ&8Ö´ä´1
+j	java:S100g"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÄ¢²8Ö´ä´1
+i	java:S100s"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïàø38Ö´ä´1
+i	java:S100~"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ˆ™\8Ö´ä´1
+p	java:S100‰"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş»½ÿÿÿÿÿ8¦Ö´ä´1
+D	java:S131""Add a default case to this switch.(Ò“ÿšùÿÿÿÿ8¦Ö´ä´1
+d	java:S100¬"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡˜¨–
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8şâÚõ³1
+H
+java:S1068	"&Remove this unused "hp" private field.(­¹Ñ£ÿÿÿÿÿ8¦Ö´ä´1

@@ -5,6 +5,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class Enemy {
     private int attack_cooldown = 30;
+    private int long_attack_cd = 60;
     private boolean alive = true;
     private int hp;
     private int height = 100;
@@ -14,6 +15,7 @@ public class Enemy {
     private int movementspeed = 4;
     Screen screen;
     private Entity_Image self_sprite;
+    int bullet_speed = 1;
     String id;
     private int min_y = 10;
     private int min_x = 10;
@@ -146,19 +148,51 @@ public class Enemy {
     }
 
 
-    public void shoot(){
-        Bullet bullet = new Bullet(screen, "bullet_down.png", "bullet", x_cord, y_cord+height, "down", 1);
+    public void shoot(String direction){
+        Bullet bullet;
+        switch (direction){
+            case("down"):
+                bullet = new Bullet(screen, "bullet_down.png", "bullet", x_cord+width/2, y_cord+height, direction,
+                    bullet_speed);
+                break;
+            case("up"):
+                bullet = new Bullet(screen, "bullet_up.png", "bullet", x_cord+width/2, y_cord, direction,
+                    bullet_speed);
+                break;
+            case("left"):
+                bullet = new Bullet(screen, "bullet_left.png", "bullet", x_cord, y_cord+(height)/2, direction,
+                    bullet_speed);
+                break;
+            case("right"):
+                bullet = new Bullet(screen, "bullet_right.png", "bullet", x_cord+width, y_cord+(height)/2, direction,
+                    bullet_speed);
+                break;
+            default:
+                bullet = new Bullet(screen, "bullet_down.png", "bullet", x_cord, y_cord+height, direction,
+                    bullet_speed);
+                break;
+        }
         screen.add_to_elements(bullet.get_image());
         list_of_bullets.add(bullet);
     }
 
+    public void attack(){
+            if(bullet_counter == attack_cooldown) {
+                shoot("down");
+                bullet_counter = 0;
+            }
+            else {
+                bullet_counter++;
+            }
+    }
 
     public void engage(String id){
         if(alive){
             switch(id){
                 case("enemy"):
                     if(bullet_counter == attack_cooldown) {
-                        shoot();
+                        shoot("down");
+                        shoot("up");
                         bullet_counter = 0;
                     }
                     else {
