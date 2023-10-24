@@ -12,11 +12,12 @@ public class Main {
         root.add(layeredPane);
         screen.setBounds(0, 0, 1920, 1080);
         layeredPane.add(screen, JLayeredPane.DEFAULT_LAYER);
-        Hud hud = new Hud(layeredPane);
+
 
 
         Player_character character = new Player_character( screen);
-        Level_generator level_one = new Level_generator(1, screen, character);
+        Hud hud = new Hud(layeredPane, character);
+        Level_generator level_one = new Level_generator(1, screen, character, hud);
         Move listener = new Move(character, root, screen);
         screen.refresh_frame();
         root.setTitle("Game");

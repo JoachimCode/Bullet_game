@@ -22,6 +22,7 @@ public class Player_character
     private int min_x = 10;
     private int max_x = 1920-width- 10;
     private int max_y = 1080-height -80;
+    private int max_y_hud = 880 - height;
     private Entity_Image hp_bar;
     private List<Bullet> list_of_player_bullets = new CopyOnWriteArrayList<>();
 
@@ -39,6 +40,7 @@ public class Player_character
         hp_bar = new Entity_Image("hp5.png",460,980, 1000, 35, "hp_bar");
 
     }
+
     public void shoot(String direction){
         rw_lock.readLock().lock();
         Bullet bullet;
@@ -94,7 +96,7 @@ public class Player_character
         else if(direction.equals("up") && y_cord < min_y){
             in_bounds = false;
         }
-        else if (direction.equals("down") && y_cord > max_y){
+        else if (direction.equals("down") && y_cord > max_y_hud){
             in_bounds = false;
         }
         return in_bounds;
@@ -122,6 +124,7 @@ public class Player_character
             rw_lock.writeLock().unlock();
         }
     }
+
 
     public void move_left(){
         if(check_bounds("left")) {
@@ -208,6 +211,7 @@ public class Player_character
     public void lose_hp(){
         rw_lock.writeLock().lock();
         current_health = current_health - 1;
+        rw_lock.writeLock().unlock();
         screen.refresh_frame();
     }
     public Entity_Image get_hp_bar(){
@@ -219,6 +223,17 @@ public class Player_character
 
     public Entity_Image get_sprite(){
         return player_character;
+    }
+    public void set_hit_image(){
+        rw_lock.writeLock().lock();
+        player_character.change_image("player_character_hit.png");
+        rw_lock.writeLock().unlock();
+    }
+
+    public void set_normal_image(){
+        rw_lock.writeLock().lock();
+        player_character.change_image("player_character.png");
+        rw_lock.writeLock().unlock();
     }
     public int get_attack_speed(){
         return attack_cooldown;

@@ -9,6 +9,7 @@ import java.util.LinkedList;
 import static java.lang.Thread.sleep;
 
 public class Level_generator {
+    Hud hud;
     Player_character player_character;
     Screen screen;
     int sleep = 8;
@@ -17,9 +18,14 @@ public class Level_generator {
     LinkedList<Bullet> list_of_bullets = new LinkedList<>();
     List<Bullet> list_of_player_bullets = new CopyOnWriteArrayList<>();
     Hit_checker hit_checker;
+    private int invurnable_time = 100;
+    private int invurnable_counter = 0;
+    private boolean is_hit = false;
 
 
-    Level_generator(int level, Screen screen, Player_character playerCharacter){
+
+    Level_generator(int level, Screen screen, Player_character playerCharacter, Hud hud){
+        this.hud = hud;
         this.player_character = playerCharacter;
         this.screen = screen;
         this.hit_checker = new Hit_checker(list_of_bullets, player_character);
@@ -34,11 +40,15 @@ public class Level_generator {
         @Override
         public void run() {
             while(level_on){
+                is_invurnable();
                 for(Enemy current_enemy:list_of_enemies){
                     SwingUtilities.invokeLater(() -> {
                         current_enemy.movement_algoritm();
                     });
                     current_enemy.engage(current_enemy.get_id());
+                    if(hit_checker.check_enemy_collision(current_enemy) && !is_hit){
+                        get_hit();
+                    }
                 }
 
                 Iterator<Bullet> bullets = list_of_bullets.iterator();
@@ -47,8 +57,8 @@ public class Level_generator {
                     SwingUtilities.invokeLater(() -> {
                     current_bullet.fire();
                     });
-                    if(hit_checker.check_bullet_collision(current_bullet)){
-                        System.out.println("hit");
+                    if(hit_checker.check_bullet_collision(current_bullet) && !is_hit){
+                        get_hit();
                         current_bullet.remove_sprite();
                         bullets.remove();
                     }
@@ -92,6 +102,7 @@ public class Level_generator {
     });
 
     public void level_one(){
+
         reset_level();
         screen.clear_screen();
         screen.add_element("grass_full.png", 0, 0, 1920, 1080, "bg");
@@ -116,4 +127,25 @@ public class Level_generator {
         list_of_bullets.clear();
     }
 
+    public void get_hit(){
+        player_character.lose_hp();
+        hud.update_health();
+        is_hit = true;
+        player_character.set_hit_image();
+    }
+    public boolean is_invurnable(){
+        if (is_hit){
+            invurnable_counter++;
+            if(invurnable_counter > invurnable_time){
+                System.out.println("Invurnable time over");
+                player_character.set_normal_image();
+                invurnable_counter = 0;
+                is_hit = false;
+            }
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }

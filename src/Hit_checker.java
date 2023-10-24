@@ -6,7 +6,8 @@ public class Hit_checker {
   Player_character player_character;
   LinkedList<Bullet> list_of_bullets;
 
-  public Hit_checker(LinkedList<Bullet> list_of_bullets, Player_character player_character) {
+  public Hit_checker(LinkedList<Bullet> list_of_bullets, Player_character player_character)
+  {
     this.player_character = player_character;
     this.list_of_bullets = list_of_bullets;
   }
@@ -32,6 +33,14 @@ public class Hit_checker {
             current_bullet.get_x() + current_bullet.get_width() > player_character.get_x() &&
             current_bullet.get_y() < player_character.get_y() + player_character.get_height() &&
             current_bullet.get_y() + current_bullet.get_height() > player_character.get_y();
+  }
+
+  public boolean check_enemy_collision(Enemy enemy){
+    return
+        enemy.get_x() < player_character.get_x() + player_character.get_width() &&
+            enemy.get_x() + enemy.get_width() > player_character.get_x() &&
+            enemy.get_y() < player_character.get_y() + player_character.get_height() &&
+            enemy.get_y() + enemy.get_height() > player_character.get_y();
   }
 
   public boolean check_player_bullet_collision(Bullet current_bullet, Enemy enemy){
