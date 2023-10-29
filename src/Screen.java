@@ -18,6 +18,7 @@ public class Screen extends Canvas {
     private VolatileImage buffer;
     LinkedList<Entity_Image> elements = new LinkedList<>();
     private final ReadWriteLock rw_lock = new ReentrantReadWriteLock();
+    LinkedList<Enemy> list_of_enemies;
 
     /**
      * This methods makes sure the image does not lag when it is moved.
@@ -49,12 +50,31 @@ public class Screen extends Canvas {
         for(Entity_Image sprite: elements){
             g.drawImage(sprite.getImage(), sprite.getX(), sprite.getY(), this);
         }
+        for(Enemy enemy: list_of_enemies){
+            draw_healthbar(g, enemy.get_hp(),enemy.get_x(), enemy.get_y());
+        }
         rw_lock.readLock().unlock();
     }
     public Screen(){
         repaint();
     }
 
+    public void draw_healthbar(Graphics g, int health, int x_cord, int y_cord){
+        int bar_x = x_cord - 10;
+        int bar_y = y_cord - 20;
+
+        // Set a custom stroke with a thickness of 3
+        Stroke customStroke = new BasicStroke(2.0f);
+        Graphics2D g2d = (Graphics2D) g;
+        g2d.setStroke(customStroke);
+
+        g.setColor(Color.RED);
+        g.fillRect(bar_x, bar_y, 10*health, 5);
+        g.setColor(Color.BLACK);
+        g.drawRect(bar_x, bar_y, 10*health, 5);
+
+        g2d.setStroke(new BasicStroke(1.0f)); // Reset to default stroke
+    }
     public void refresh_frame(){
         repaint();
     }
@@ -89,6 +109,11 @@ public class Screen extends Canvas {
         elements.clear();
         rw_lock.writeLock().unlock();
         refresh_frame();
+    }
+
+    public void get_enemies(LinkedList<Enemy> list_of_enemies)
+    {
+        this.list_of_enemies = list_of_enemies;
     }
 
 

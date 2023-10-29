@@ -111,7 +111,9 @@ public class Level_generator {
         screen.clear_screen();
         screen.add_element("grass_full.png", 0, 0, 1920, 1080, "bg");
         screen.add_to_elements(player_character.get_sprite());
+        screen.get_enemies(list_of_enemies);
         add_enemy("player_character.png", 500, 200, 10);
+        add_enemy("player_character.png", 200, 600, 10);
         //level_one_thread.start();
     }
     public void add_player_bullet(Bullet bullet){
