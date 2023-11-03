@@ -26,7 +26,9 @@ public class Game_time
   }
 
   public void run_all(){
-    move.get_thread().run();
-    level.get_level_one_thread().run();
+    if (level.get_level_on()) {
+      move.get_thread().run();
+      level.get_level_one_thread().run();
+    }
   }
 }

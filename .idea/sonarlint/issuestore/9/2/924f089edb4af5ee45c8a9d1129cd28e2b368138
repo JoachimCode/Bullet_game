@@ -1,23 +1,16 @@
 
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ÏÛ∂8‡Ÿ€‰¥1
-Y
-java:S1854"<Remove this useless assignment to local variable "listener".(ÃÙ˜Ç8ÚŸ€‰¥1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çß‰ºˇˇˇˇˇ8ãô™ó∂1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(π‚ ˜8÷É¿ó∂1
 Z
-java:S1854"=Remove this useless assignment to local variable "level_one".(®ÏÛ∂8ÚŸ€‰¥1
-Y
-java:S1854"7Remove this useless assignment to local variable "hud".(›±¢¡˛ˇˇˇˇ8ÚŸ€‰¥1
-X	java:S125	"<This block of commented-out lines of code should be removed.(ù¯∑±8ÚŸ€‰¥1
-J
-java:S1481"(Remove this unused "hud" local variable.(›±¢¡˛ˇˇˇˇ8ÚŸ€‰¥1
+java:S1854"=Remove this useless assignment to local variable "game_time".(π‚ ˜8ÙÉ¿ó∂1
+X	java:S125	"<This block of commented-out lines of code should be removed.(ù¯∑±8ãô™ó∂1
 K
-java:S1481".Remove this unused "level_one" local variable.(®ÏÛ∂8¯Ÿ€‰¥1
-J
-java:S1481"-Remove this unused "listener" local variable.(ÃÙ˜Ç8¯Ÿ€‰¥1
+java:S1481".Remove this unused "game_time" local variable.(π‚ ˜8ˇÉ¿ó∂1
 k
-java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(îè»˜¸ˇˇˇˇ8¯Ÿ€‰¥1
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(îè»˜¸ˇˇˇˇ8ÄÑ¿ó∂1
 H
-java:S1602",Remove useless curly braces around statement(∞õÏU8¯Ÿ€‰¥1
+java:S1602",Remove useless curly braces around statement(∞õÏU8ÅÑ¿ó∂1
 ]
-java:S1612"AReplace this lambda with method reference 'screen::requestFocus'.(∞õÏU8¯Ÿ€‰¥1
+java:S1612"AReplace this lambda with method reference 'screen::requestFocus'.(∞õÏU8ÅÑ¿ó∂1
 B
-java:S1128"%Remove this unused import 'java.awt'.(Ô¥µ©8¯Ÿ€‰¥1
+java:S1128"%Remove this unused import 'java.awt'.(Ô¥µ©8πÂøó∂1

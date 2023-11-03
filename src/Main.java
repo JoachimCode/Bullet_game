@@ -13,14 +13,15 @@ public class Main {
         screen.setBounds(0, 0, 1920, 1080);
         layeredPane.add(screen, JLayeredPane.DEFAULT_LAYER);
 
-
-
         Player_character character = new Player_character( screen);
         Hud hud = new Hud(layeredPane, character);
         Level_generator level_one = new Level_generator(1, screen, character, hud);
+
         Move listener = new Move(character, root, screen);
-        screen.refresh_frame();
         Game_time game_time = new Game_time(level_one, listener);
+        Buttons buttons = new Buttons(hud, level_one, game_time, screen);
+        screen.refresh_frame();
+
         root.setTitle("Game");
         root.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         root.setSize(1920, 1080);

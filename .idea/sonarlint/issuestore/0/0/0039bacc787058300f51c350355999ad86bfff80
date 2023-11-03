@@ -1,85 +1,84 @@
 
 E
-java:S1604"(Make this anonymous inner class a lambda(·ğå—8»®åó±1
-z	java:S116"YRename this field "bullet_counter" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡¸Ãşÿÿÿÿ8´±åó±1
+java:S1604"(Make this anonymous inner class a lambda(·ğå—8ÖÚƒ˜¶1
+z	java:S116"YRename this field "bullet_counter" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡¸Ãşÿÿÿÿ8¤Ûƒ˜¶1
 q	java:S116
-"PRename this field "is_up" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚öıöûÿÿÿÿ8µ±åó±1
-n	java:S116"RRename this field "is_down" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÚ‘Õ8µ±åó±1
-s	java:S116"RRename this field "is_left" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äÌá†úÿÿÿÿ8µ±åó±1
-t	java:S116"SRename this field "is_right" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œâ³Şüÿÿÿÿ8µ±åó±1
-s	java:S116"RRename this field "up_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğçöúÿÿÿÿ8µ±åó±1
-p	java:S116"TRename this field "left_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ¤àù8µ±åó±1
-v	java:S116"URename this field "right_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á¤ï•şÿÿÿÿ8µ±åó±1
-p	java:S116"TRename this field "down_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•µü8µ±åó±1
-p	java:S116"ORename this field "is_w" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶§Ç²şÿÿÿÿ8µ±åó±1
-p	java:S116"ORename this field "is_a" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û¾ÏÌüÿÿÿÿ8µ±åó±1
-k	java:S116"ORename this field "is_s" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áşËÉ8µ±åó±1
-p	java:S116"ORename this field "is_d" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å¯¢„ùÿÿÿÿ8¶±åó±1
-r	java:S116"QRename this field "w_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦½Ñêûÿÿÿÿ8¶±åó±1
-r	java:S116"QRename this field "a_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ŠÜúûÿÿÿÿ8¶±åó±1
-r	java:S116"QRename this field "s_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ–ÿªúÿÿÿÿ8¶±åó±1
-m	java:S116"QRename this field "d_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¶Ú8¶±åó±1
+"PRename this field "is_up" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚öıöûÿÿÿÿ8¤Ûƒ˜¶1
+n	java:S116"RRename this field "is_down" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÚ‘Õ8¤Ûƒ˜¶1
+s	java:S116"RRename this field "is_left" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äÌá†úÿÿÿÿ8¤Ûƒ˜¶1
+t	java:S116"SRename this field "is_right" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œâ³Şüÿÿÿÿ8¤Ûƒ˜¶1
+s	java:S116"RRename this field "up_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğçöúÿÿÿÿ8¤Ûƒ˜¶1
+p	java:S116"TRename this field "left_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ¤àù8¤Ûƒ˜¶1
+v	java:S116"URename this field "right_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á¤ï•şÿÿÿÿ8¤Ûƒ˜¶1
+p	java:S116"TRename this field "down_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•µü8¤Ûƒ˜¶1
+p	java:S116"ORename this field "is_w" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶§Ç²şÿÿÿÿ8¤Ûƒ˜¶1
+p	java:S116"ORename this field "is_a" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û¾ÏÌüÿÿÿÿ8¤Ûƒ˜¶1
+k	java:S116"ORename this field "is_s" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áşËÉ8¤Ûƒ˜¶1
+p	java:S116"ORename this field "is_d" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å¯¢„ùÿÿÿÿ8¤Ûƒ˜¶1
+r	java:S116"QRename this field "w_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦½Ñêûÿÿÿÿ8¤Ûƒ˜¶1
+r	java:S116"QRename this field "a_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ŠÜúûÿÿÿÿ8¤Ûƒ˜¶1
+r	java:S116"QRename this field "s_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ–ÿªúÿÿÿÿ8¤Ûƒ˜¶1
+m	java:S116"QRename this field "d_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¶Ú8¤Ûƒ˜¶1
 b
-java:S2134"@Don't extend "Thread", since the "run" method is not overridden.(Èªš·øÿÿÿÿ8º±åó±1
+java:S2134"@Don't extend "Thread", since the "run" method is not overridden.(Èªš·øÿÿÿÿ8¤Ûƒ˜¶1
 g
 java:S1124
-"EReorder the modifiers to comply with the Java Language Specification.(‚öıöûÿÿÿÿ8¼±åó±1
+"EReorder the modifiers to comply with the Java Language Specification.(‚öıöûÿÿÿÿ8¤Ûƒ˜¶1
 b
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ÚÚ‘Õ8¼±åó±1
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ÚÚ‘Õ8¤Ûƒ˜¶1
 g
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(äÌá†úÿÿÿÿ8¼±åó±1
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(äÌá†úÿÿÿÿ8¤Ûƒ˜¶1
 g
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Œâ³Şüÿÿÿÿ8¼±åó±1
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Œâ³Şüÿÿÿÿ8¤Ûƒ˜¶1
 g
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¶§Ç²şÿÿÿÿ8¾±åó±1
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¶§Ç²şÿÿÿÿ8¤Ûƒ˜¶1
 g
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(û¾ÏÌüÿÿÿÿ8¾±åó±1
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(û¾ÏÌüÿÿÿÿ8¤Ûƒ˜¶1
 b
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(áşËÉ8¾±åó±1
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(áşËÉ8¤Ûƒ˜¶1
 g
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Å¯¢„ùÿÿÿÿ8¾±åó±1
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Å¯¢„ùÿÿÿÿ8¤Ûƒ˜¶1
 H
-java:S1602%",Remove useless curly braces around statement(°›ìU8Æ±åó±1
+java:S1602$",Remove useless curly braces around statement(°›ìU8¤Ûƒ˜¶1
 H
-java:S16020",Remove useless curly braces around statement(°›ìU8Ë±åó±1
+java:S1602/",Remove useless curly braces around statement(°›ìU8¤Ûƒ˜¶1
 H
-java:S1602;",Remove useless curly braces around statement(°›ìU8Ö±åó±1
+java:S1602:",Remove useless curly braces around statement(°›ìU8¤Ûƒ˜¶1
 H
-java:S1602F",Remove useless curly braces around statement(°›ìU8Ù±åó±1
+java:S1602E",Remove useless curly braces around statement(°›ìU8¤Ûƒ˜¶1
 H
-java:S1602h",Remove useless curly braces around statement(°›ìU8‰ûôó±1
+java:S1602g",Remove useless curly braces around statement(°›ìU8´Ûƒ˜¶1
 H
-java:S1602l",Remove useless curly braces around statement(°›ìU8¹÷ ò³1
+java:S1602k",Remove useless curly braces around statement(°›ìU8´Ûƒ˜¶1
 H
-java:S1602p",Remove useless curly braces around statement(°›ìU8š¸¡ò³1
+java:S1602o",Remove useless curly braces around statement(°›ìU8´Ûƒ˜¶1
 H
-java:S1602t",Remove useless curly braces around statement(°›ìU8ÁÑ¡ò³1
-{
-java:S2142{"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8Õìõó±1
-E	java:S108{")Either remove or fill this block of code.(ä ¹€8Õìõó±1
-o
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.( œ8‹ûôó±1
-H
-java:S1172"+Remove this unused method parameter "root".( œ8‹ûôó±1
-Ÿ
-java:S1186†"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8Œûôó±1
-k	java:S100È"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°Ê¾õ8’ûôó±1
-p	java:S100Ï"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ş¹Ùıÿÿÿÿ8“ûôó±1
-p	java:S100Õ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ë¡¸¹ıÿÿÿÿ8•ûôó±1
-k	java:S100Û"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿“â¾8—ûôó±1
-\
-java:S3398Û">Move this method into the anonymous class declared at line 31.(¿“â¾8˜ûôó±1
-a
-java:S3398Ï">Move this method into the anonymous class declared at line 31.(¡ş¹Ùıÿÿÿÿ8˜ûôó±1
-\
-java:S3398È">Move this method into the anonymous class declared at line 31.(°Ê¾õ8˜ûôó±1
-a
-java:S3398Õ">Move this method into the anonymous class declared at line 31.(Ë¡¸¹ıÿÿÿÿ8˜ûôó±1
-L
-java:S1068"*Remove this unused "w_lock" private field.(¦½Ñêûÿÿÿÿ8í±åó±1
-L
-java:S1068"*Remove this unused "a_lock" private field.(–ŠÜúûÿÿÿÿ8í±åó±1
-L
-java:S1068"*Remove this unused "s_lock" private field.(œ–ÿªúÿÿÿÿ8í±åó±1
+java:S1602s",Remove useless curly braces around statement(°›ìU8´Ûƒ˜¶1
+n
+java:S3776z"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.( œ8´Ûƒ˜¶1
 G
-java:S1068"*Remove this unused "d_lock" private field.(É¶Ú8í±åó±1
+java:S1172z"+Remove this unused method parameter "root".( œ8´Ûƒ˜¶1
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8´Ûƒ˜¶1
+^	java:S125»"<This block of commented-out lines of code should be removed.(¯çÔÒûÿÿÿÿ8´Ûƒ˜¶1
+k	java:S100Á"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°Ê¾õ8´Ûƒ˜¶1
+p	java:S100È"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ş¹Ùıÿÿÿÿ8´Ûƒ˜¶1
+p	java:S100Î"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ë¡¸¹ıÿÿÿÿ8´Ûƒ˜¶1
+k	java:S100Ô"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿“â¾8´Ûƒ˜¶1
+p	java:S100Ú"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ŞŒöıÿÿÿÿ8´Ûƒ˜¶1
+\
+java:S3398Ô">Move this method into the anonymous class declared at line 31.(¿“â¾8´Ûƒ˜¶1
+\
+java:S3398Á">Move this method into the anonymous class declared at line 31.(°Ê¾õ8´Ûƒ˜¶1
+a
+java:S3398Î">Move this method into the anonymous class declared at line 31.(Ë¡¸¹ıÿÿÿÿ8´Ûƒ˜¶1
+a
+java:S3398È">Move this method into the anonymous class declared at line 31.(¡ş¹Ùıÿÿÿÿ8´Ûƒ˜¶1
+L
+java:S1068"*Remove this unused "w_lock" private field.(¦½Ñêûÿÿÿÿ8´Ûƒ˜¶1
+L
+java:S1068"*Remove this unused "a_lock" private field.(–ŠÜúûÿÿÿÿ8´Ûƒ˜¶1
+L
+java:S1068"*Remove this unused "s_lock" private field.(œ–ÿªúÿÿÿÿ8´Ûƒ˜¶1
+G
+java:S1068"*Remove this unused "d_lock" private field.(É¶Ú8´Ûƒ˜¶1

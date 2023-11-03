@@ -5,13 +5,16 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class Enemy {
     private int attack_cooldown = 80;
-    private int long_attack_cd = 60;
+    private int long_attack_cd = 400;
     private boolean alive = true;
     private int hp;
+    private int max_hp;
     private int height = 100;
     private int width = 75;
     private int x_cord;
     private int y_cord;
+    private int x_cord_start;
+    private int y_cord_start;
     private int movementspeed = 3;
     Screen screen;
     private Entity_Image self_sprite;
@@ -25,13 +28,17 @@ public class Enemy {
     private final ReadWriteLock rw_lock = new ReentrantReadWriteLock();
     String direction = "left";
     int bullet_counter = 0;
+    String vertical_direction = "up";
 
 
     public Enemy(Screen screen, LinkedList<Bullet> list_of_bullets, String filename, String id, int start_x, int start_y, int hp){
         this.list_of_bullets = list_of_bullets;
         this.hp = hp;
+        this.max_hp = hp;
         this.x_cord = start_x;
         this.y_cord = start_y;
+        this.x_cord_start = start_x;
+        this.y_cord_start = start_y;
         this.screen = screen;
         this.id = id;
         self_sprite = new Entity_Image(filename, start_x, start_y, this.width, this.height, id);
@@ -59,6 +66,23 @@ public class Enemy {
         return in_bounds;
     }
 
+    public boolean check_bounds_set_distance(String direction, int distance, int x, int y){
+        boolean in_bounds = true;
+        if(direction.equals("left") && x_cord < x - distance){
+            in_bounds = false;
+        }
+        else if(direction.equals("right") && x_cord > x + distance){
+            in_bounds = false;
+        }
+        else if(direction.equals("up") && y_cord < y - distance){
+            in_bounds = false;
+        }
+        else if (direction.equals("down") && y_cord > y + distance){
+            in_bounds = false;
+        }
+        return in_bounds;
+    }
+
     public void movement_algoritm(){
         if(!check_bounds("left")){
             direction = "right";
@@ -72,7 +96,6 @@ public class Enemy {
         else{
             move_right();
         }
-
     }
 
     public int get_x(){
@@ -176,6 +199,34 @@ public class Enemy {
         list_of_bullets.add(bullet);
     }
 
+    public void shoot_with_speed(String direction, int speed){
+        Bullet bullet;
+        switch (direction){
+            case("down"):
+                bullet = new Bullet(screen, "bullet_down.png", "bullet", x_cord+width/2, y_cord+height, direction,
+                    speed);
+                break;
+            case("up"):
+                bullet = new Bullet(screen, "bullet_up.png", "bullet", x_cord+width/2, y_cord, direction,
+                    speed);
+                break;
+            case("left"):
+                bullet = new Bullet(screen, "bullet_left.png", "bullet", x_cord, y_cord+(height)/2, direction,
+                    speed);
+                break;
+            case("right"):
+                bullet = new Bullet(screen, "bullet_right.png", "bullet", x_cord+width, y_cord+(height)/2, direction,
+                    speed);
+                break;
+            default:
+                bullet = new Bullet(screen, "bullet_down.png", "bullet", x_cord, y_cord+height, direction,
+                    speed);
+                break;
+        }
+        screen.add_to_elements(bullet.get_image());
+        list_of_bullets.add(bullet);
+    }
+
     public void attack(){
             if(bullet_counter == attack_cooldown) {
                 shoot("down");
@@ -198,6 +249,14 @@ public class Enemy {
                     else {
                         bullet_counter ++;
                     }
+                    if(long_attack_cd == 0){
+                        shoot_with_speed("left", 4);
+                        shoot_with_speed("right", 4);
+                        long_attack_cd = 400;
+                    }
+                    else{
+                        long_attack_cd--;
+                    }
                     break;
             }
         }
@@ -216,13 +275,18 @@ public class Enemy {
         rw_lock.writeLock().unlock();
     }
 
-    public void lose_hp(){
+    public void lose_hp(int damage){
         rw_lock.writeLock().lock();
-        hp--;
+        hp = hp - damage;
         rw_lock.writeLock().unlock();
     }
 
     public String get_id(){
         return id;
+    }
+
+    public int get_max_hp() {
+        return max_hp;
+
     }
 }

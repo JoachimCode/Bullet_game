@@ -51,7 +51,7 @@ public class Screen extends Canvas {
             g.drawImage(sprite.getImage(), sprite.getX(), sprite.getY(), this);
         }
         for(Enemy enemy: list_of_enemies){
-            draw_healthbar(g, enemy.get_hp(),enemy.get_x(), enemy.get_y());
+            draw_healthbar(g, enemy.get_hp(),enemy.get_x(), enemy.get_y(), enemy.get_max_hp());
         }
         rw_lock.readLock().unlock();
     }
@@ -59,9 +59,12 @@ public class Screen extends Canvas {
         repaint();
     }
 
-    public void draw_healthbar(Graphics g, int health, int x_cord, int y_cord){
+    public void draw_healthbar(Graphics g, int health, int x_cord, int y_cord, int max_hp){
         int bar_x = x_cord - 10;
         int bar_y = y_cord - 20;
+        int bar_width = 100;
+        float current_hp_precentage = (float)health/(float)max_hp;
+        int current_width = (int) (bar_width*current_hp_precentage);
 
         // Set a custom stroke with a thickness of 3
         Stroke customStroke = new BasicStroke(2.0f);
@@ -69,9 +72,9 @@ public class Screen extends Canvas {
         g2d.setStroke(customStroke);
 
         g.setColor(Color.RED);
-        g.fillRect(bar_x, bar_y, 10*health, 5);
+        g.fillRect(bar_x, bar_y, current_width, 5);
         g.setColor(Color.BLACK);
-        g.drawRect(bar_x, bar_y, 10*health, 5);
+        g.drawRect(bar_x, bar_y, bar_width, 5);
 
         g2d.setStroke(new BasicStroke(1.0f)); // Reset to default stroke
     }

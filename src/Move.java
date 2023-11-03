@@ -4,6 +4,7 @@ import java.awt.event.KeyListener;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
+
 public class Move extends Thread {
     int bullet_counter = 0;
 
@@ -125,10 +126,18 @@ public class Move extends Thread {
         listener = new KeyListener() {
             @Override
             public void keyTyped(KeyEvent e) {
+                if(e.getKeyCode() == KeyEvent.VK_F){
+                    character.lose_hp();
+                    System.out.println("F pressed");
+                }
             }
+
+
 
             @Override
             public void keyPressed(KeyEvent e) {
+
+
                 if (e.getKeyCode() == KeyEvent.VK_UP) {
                     is_up = true;
                 }
@@ -188,7 +197,6 @@ public class Move extends Thread {
         screen.addKeyListener(listener);
 
     }
-
 
     private boolean get_is_up(){
         up_lock.readLock().lock();

@@ -1,10 +1,9 @@
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
+import java.util.Timer;
 import java.util.concurrent.CopyOnWriteArrayList;
 import javax.swing.*;
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
+
 
 import static java.lang.Thread.sleep;
 
@@ -20,7 +19,11 @@ public class Level_generator {
     Hit_checker hit_checker;
     private int invurnable_time = 150;
     private int invurnable_counter = 0;
+    private boolean is_boosted = false;
+    private int boosted_time = 450;
+    private int boosted_counter = 0;
     private boolean is_hit = false;
+    Timer timer = new Timer();
 
 
 
@@ -39,9 +42,18 @@ public class Level_generator {
     Thread level_one_thread = new Thread(new Runnable() {
         @Override
         public void run() {
+                if(check_dead()){
+                    set_level_of();
+                    timer.schedule(new TimerTask() {
+                        @Override
+                        public void run() {
+                            hud.generate_death_screen();
+                        }
+                    }, 500);
 
+
+                }
                 is_invurnable();
-
                 Iterator<Enemy> enemies = list_of_enemies.iterator();
                 while(enemies.hasNext()){
                     Enemy current_enemy = enemies.next();
@@ -96,7 +108,7 @@ public class Level_generator {
                     for(Enemy enemy:list_of_enemies){
                         if(hit_checker.check_player_bullet_collision(current_bullet, enemy)){
                             System.out.println("Enemy hit");
-                            enemy.lose_hp();
+                            enemy.lose_hp(player_character.get_attack_damage());
                             current_bullet.remove_sprite();
                             current_list_of_player_bullets.remove(i);
                             i--;
@@ -112,8 +124,8 @@ public class Level_generator {
         screen.add_element("grass_full.png", 0, 0, 1920, 1080, "bg");
         screen.add_to_elements(player_character.get_sprite());
         screen.get_enemies(list_of_enemies);
-        add_enemy("player_character.png", 500, 200, 10);
-        add_enemy("player_character.png", 200, 600, 10);
+        add_enemy("player_character.png", 500, 200, 50);
+        add_enemy("player_character.png", 200, 600, 50);
         //level_one_thread.start();
     }
     public void add_player_bullet(Bullet bullet){
@@ -131,11 +143,17 @@ public class Level_generator {
         list_of_enemies.clear();
         list_of_player_bullets.clear();
         list_of_bullets.clear();
+        player_character.reset_hp();
+        player_character.set_x(player_character.get_start_x());
+        player_character.set_y(player_character.get_start_y());
+        player_character.set_normal_image();
     }
 
     public void get_hit(){
         player_character.lose_hp();
-        hud.update_health();
+        SwingUtilities.invokeLater(() -> {
+            hud.update_health();
+        });
         is_hit = true;
         player_character.set_hit_image();
     }
@@ -153,6 +171,29 @@ public class Level_generator {
         else{
             return false;
         }
+    }
+
+
+
+    
+    private boolean check_dead(){
+        if(player_character.get_health() <= 0){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public boolean get_level_on(){
+        return level_on;
+    }
+
+    public void set_level_of(){
+        level_on = false;
+    }
+    public void set_level_on(){
+        level_on = true;
     }
     public Thread get_level_one_thread(){
         return level_one_thread;

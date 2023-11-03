@@ -26,7 +26,7 @@ java:S4973p"<Strings and Boxed types should be compared using "equals()".(­ŠÜ
 q	java:S116"PRename this field "min_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ì•çùÿÿÿÿ8ƒÀÅô³1
 q	java:S116"PRename this field "min_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯¤¶üÿÿÿÿ8ƒÀÅô³1
 l	java:S116"PRename this field "max_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô–é´8ƒÀÅô³1
-l	java:S116"PRename this field "max_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é¡ªÌ8ƒÀÅô³1
+q	java:S116"PRename this field "max_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿©·ğøÿÿÿÿ8ƒÀÅô³1
 n	java:S116"RRename this field "rw_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İë°®8ƒÀÅô³1
 r	java:S116"VRename this field "self_sprite" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğË©Î8ƒÀÅô³1
 o	java:S100'"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñŒëîÿÿÿÿÿ8‰ÀÅô³1

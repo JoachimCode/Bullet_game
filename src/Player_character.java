@@ -9,6 +9,9 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class Player_character
 {
+    int attack_damage = 1;
+    int base_ad = 1;
+    int base_bullet_speed = 5;
     int bullet_speed = 5;
     int attack_cooldown = 30;
     int base_ms = 2;
@@ -16,6 +19,8 @@ public class Player_character
     private int max_health = 5;
     int height = 80;
     int width = 60;
+    final int start_x = 500;
+    final int start_y = 500;
     int x_cord = 500;
     int y_cord = 500;
     private int min_y = 10;
@@ -25,6 +30,7 @@ public class Player_character
     private int max_y_hud = 880 - height;
     private Entity_Image hp_bar;
     private List<Bullet> list_of_player_bullets = new CopyOnWriteArrayList<>();
+    private boolean is_boosted = false;
 
 
     int movementspeed = 2;
@@ -148,6 +154,13 @@ public class Player_character
         }
     }
 
+    public int get_start_x(){
+        return start_x;
+    }
+
+    public int get_start_y(){
+        return start_y;
+    }
 
     public void move_up_right(){
         move_right();
@@ -235,7 +248,50 @@ public class Player_character
         player_character.change_image("player_character.png");
         rw_lock.writeLock().unlock();
     }
+
+    public void reset_hp(){
+        rw_lock.writeLock().lock();
+        current_health = max_health;
+        rw_lock.writeLock().unlock();
+    }
+    public void set_x(int x){
+        rw_lock.writeLock().lock();
+        x_cord = x;
+        player_character.setX(x_cord);
+        rw_lock.writeLock().unlock();
+    }
+
+    public void set_y(int y){
+        rw_lock.writeLock().lock();
+        y_cord = y;
+        player_character.setY(y_cord);
+        rw_lock.writeLock().unlock();
+    }
     public int get_attack_speed(){
         return attack_cooldown;
+    }
+
+    public int get_attack_damage(){
+        return attack_damage;
+    }
+    public void set_attack_damage(int damage){
+        attack_damage = damage;
+    }
+
+    public void boost(){
+        movementspeed += 2;
+        bullet_speed += 2;
+        attack_damage += 1;
+        set_hit_image();
+    }
+
+    public void reset_boost(){
+        movementspeed =- 2;
+        bullet_speed =- 2;
+        attack_damage =- 1;
+    }
+
+    public void set_boosted(boolean is_boosted){
+        this.is_boosted = is_boosted;
     }
 }

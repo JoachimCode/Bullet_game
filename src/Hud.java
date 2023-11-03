@@ -13,7 +13,14 @@ public class Hud {
     JPanel health_bar;
     JLabel health_image;
     Player_character player;
+    JLayeredPane frame;
+    JLayeredPane death_screen = new JLayeredPane();
+    JLabel death_label = new JLabel();
+    JButton restart_button = new JButton(get_sized_image("reset_button.png", 100, 50));
     public Hud(JLayeredPane frame, Player_character player){
+
+        SwingUtilities.invokeLater(() -> {
+        this.frame = frame;
         this.player = player;
         //Adds the panel that will contain all the elements
         hud = new JPanel();
@@ -23,6 +30,9 @@ public class Hud {
         hud.setBackground(Color.GRAY);
         hud.setBorder(new LineBorder(Color.ORANGE, 10));
         frame.add(hud, JLayeredPane.PALETTE_LAYER);
+        death_screen.setBounds(0,0, 1920, 1080);
+        death_screen.setVisible(false);
+        frame.add(death_screen, JLayeredPane.POPUP_LAYER);
 
         //Add the health bar
         health_bar = new JPanel(null);
@@ -43,6 +53,7 @@ public class Hud {
         health_bar.add(health_image);
         health_bar.setBounds(500, 950, barWidth, barHeight);
         //screen.add_element("grass_full.png", 0, 0, 1920, 1080, "bg");
+        });
     }
 
     public void update_health(){
@@ -78,5 +89,32 @@ public class Hud {
         Image scaledImage = healthIcon.getImage().getScaledInstance(width, height, Image.SCALE_SMOOTH);
         return new ImageIcon(scaledImage);
         // Position the image manually
+    }
+
+    public void generate_death_screen(){
+
+        SwingUtilities.invokeLater(() -> {
+            JPanel restart_button_panel = new JPanel(null);
+            JPanel death_label_panel = new JPanel();
+            restart_button_panel.setBounds(890, 650, 100, 50);
+            restart_button.setBounds(0, 0, 100, 50);
+            restart_button_panel.add(restart_button);
+            death_label_panel.setBounds(0,0, 1920, 1080);
+            death_label_panel.add(death_label);
+            death_screen.add(restart_button_panel, JLayeredPane.POPUP_LAYER);
+            death_label.setIcon(get_sized_image("death_screen.png", 1920, 1080));
+            death_screen.add(death_label_panel, JLayeredPane.DEFAULT_LAYER);
+            death_screen.setVisible(true);
+        });
+    }
+
+    public void hide_death_screen(){
+        update_health();
+        death_screen.removeAll();
+        death_screen.setVisible(false);
+    }
+
+    public JButton get_restart_button(){
+        return restart_button;
     }
 }
