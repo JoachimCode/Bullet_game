@@ -9,6 +9,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class Player_character
 {
+    Game_time timer;
     int attack_damage = 1;
     int base_ad = 1;
     int base_bullet_speed = 5;
@@ -31,6 +32,9 @@ public class Player_character
     private Entity_Image hp_bar;
     private List<Bullet> list_of_player_bullets = new CopyOnWriteArrayList<>();
     private boolean is_boosted = false;
+    private boolean is_boosted_cd = false;
+    private int boosted_cd;
+    private int boosted_base_cd = 10;
 
 
     int movementspeed = 2;
@@ -192,8 +196,12 @@ public class Player_character
         rw_lock.readLock().unlock();
         return y;
     }
-    public void half_ms(){
-        movementspeed = movementspeed;
+    public void swing_slow(){
+        movementspeed = movementspeed ;
+    }
+
+    public void swing_reset(){
+        movementspeed = base_ms;
     }
 
     public void reset_ms(){
@@ -279,19 +287,73 @@ public class Player_character
     }
 
     public void boost(){
+        rw_lock.writeLock().lock();
+        set_boosted(true);
         movementspeed += 2;
+        base_ms += 2;
         bullet_speed += 2;
         attack_damage += 1;
         set_hit_image();
+        rw_lock.writeLock().unlock();
     }
 
     public void reset_boost(){
-        movementspeed =- 2;
-        bullet_speed =- 2;
-        attack_damage =- 1;
+        rw_lock.writeLock().lock();
+        base_ms -= 2;
+        set_boosted(false);
+        movementspeed -= 2;
+        bullet_speed -= 2;
+        attack_damage -= 1;
+        set_normal_image();
+        set_boosted_cd(boosted_base_cd);
+        timer.set_timer("boost_cd");
+        rw_lock.writeLock().unlock();
     }
 
     public void set_boosted(boolean is_boosted){
+        rw_lock.writeLock().lock();
         this.is_boosted = is_boosted;
+        rw_lock.writeLock().unlock();
+    }
+    public boolean get_boosted(){
+        boolean temp_is_boosted = is_boosted;
+        return temp_is_boosted;
+
+    }
+
+    public void set_boosted_image(){
+        rw_lock.writeLock().lock();
+        player_character.change_image("player_character_hit.png");
+        rw_lock.writeLock().unlock();
+    }
+
+    public void set_boosted_cd(int boosted_cd){
+        rw_lock.writeLock().lock();
+        this.boosted_cd = boosted_cd;
+        rw_lock.writeLock().unlock();
+    }
+
+    public int get_boosted_cd(){
+        int temp_boosted_cd = boosted_cd;
+        return temp_boosted_cd;
+    }
+    public boolean is_on_boosted_cd(){
+        boolean temp_bool = false;
+        if((boosted_cd > 0)){
+            temp_bool = true;
+        }
+        else{
+            temp_bool = false;
+        }
+        return temp_bool;
+    }
+
+    public void setTimer(Game_time timer){
+        this.timer = timer;
+    }
+
+    public int get_boosted_base_cd(){
+        int temp = boosted_base_cd;
+        return temp;
     }
 }

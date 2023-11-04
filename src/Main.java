@@ -17,8 +17,8 @@ public class Main {
         Hud hud = new Hud(layeredPane, character);
         Level_generator level_one = new Level_generator(1, screen, character, hud);
 
-        Move listener = new Move(character, root, screen);
-        Game_time game_time = new Game_time(level_one, listener);
+        Move listener = new Move(character, root, screen, hud);
+        Game_time game_time = new Game_time(level_one, listener, character);
         Buttons buttons = new Buttons(hud, level_one, game_time, screen);
         screen.refresh_frame();
 
@@ -28,6 +28,7 @@ public class Main {
         root.setVisible(true);
         SwingUtilities.invokeLater(() -> {
             screen.requestFocus();
+
         });
     }
 }

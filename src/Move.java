@@ -6,8 +6,9 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 
 public class Move extends Thread {
+    Hud hud;
     int bullet_counter = 0;
-
+    Game_time game_time;
     volatile private boolean is_up = false;
     volatile private boolean is_down = false;
     volatile private boolean is_left = false;
@@ -78,27 +79,27 @@ public class Move extends Thread {
                 }
                  if (get_is_up() && get_is_right()) {
                     SwingUtilities.invokeLater(() -> {
-                        character.half_ms();
+                        character.swing_slow();
                         character.move_up_right();
-                        character.reset_ms();
+                        character.swing_reset();
                     });
                 } else if (get_is_up() && get_is_left()) {
                     SwingUtilities.invokeLater(() -> {
-                        character.half_ms();
+                        character.swing_slow();
                         character.move_up_left();
-                        character.reset_ms();
+                        character.swing_reset();
                     });
                 } else if (get_is_down() && get_is_right()) {
                     SwingUtilities.invokeLater(() -> {
-                        character.half_ms();
+                        character.swing_slow();
                         character.move_down_right();
-                        character.reset_ms();
+                        character.swing_reset();
                     });
                 } else if (get_is_down() && get_is_left()) {
                     SwingUtilities.invokeLater(() -> {
-                        character.half_ms();
+                        character.swing_slow();
                         character.move_down_left();
-                        character.reset_ms();
+                        character.swing_reset();
                     });
                 } else if (get_is_up()) {
                     SwingUtilities.invokeLater(() -> {
@@ -120,23 +121,24 @@ public class Move extends Thread {
         }
     });
 
-    public Move(Player_character character, JFrame root, Screen screen){
+    public Move(Player_character character, JFrame root, Screen screen, Hud hud){
+        this.hud = hud;
         this.character = character;
         KeyListener listener;
         listener = new KeyListener() {
             @Override
             public void keyTyped(KeyEvent e) {
-                if(e.getKeyCode() == KeyEvent.VK_F){
-                    character.lose_hp();
-                    System.out.println("F pressed");
-                }
+
             }
-
-
-
             @Override
             public void keyPressed(KeyEvent e) {
-
+                if(e.getKeyCode() == KeyEvent.VK_SPACE){
+                    if (!character.get_boosted() && !character.is_on_boosted_cd()) {
+                        character.boost();
+                        game_time.set_timer("boost");
+                        hud.update_boost_cd();
+                    }
+                }
 
                 if (e.getKeyCode() == KeyEvent.VK_UP) {
                     is_up = true;
@@ -225,6 +227,10 @@ public class Move extends Thread {
     }
     public Thread get_thread(){
         return thread;
+    }
+
+    public void set_game_time(Game_time game_time){
+        this.game_time = game_time;
     }
 
 

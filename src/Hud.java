@@ -9,6 +9,7 @@ It sets up a JPanel that is to contain all the elements in the hud.
  */
 
 public class Hud {
+    JLabel boost_cd;
     JPanel hud;
     JPanel health_bar;
     JLabel health_image;
@@ -34,6 +35,15 @@ public class Hud {
         death_screen.setVisible(false);
         frame.add(death_screen, JLayeredPane.POPUP_LAYER);
 
+        //cd
+        boost_cd = new JLabel();
+        boost_cd.setBounds(1550, 950, 100, 50);
+        boost_cd.setText("Boost CD: " + player.get_boosted_cd());
+        hud.add(boost_cd);
+        frame.add(boost_cd, JLayeredPane.MODAL_LAYER);
+        update_boost_cd();
+
+
         //Add the health bar
         health_bar = new JPanel(null);
         hud.add(health_bar);
@@ -54,8 +64,20 @@ public class Hud {
         health_bar.setBounds(500, 950, barWidth, barHeight);
         //screen.add_element("grass_full.png", 0, 0, 1920, 1080, "bg");
         });
+
+
     }
 
+    public void update_boost_cd(){
+        if(player.get_boosted()){
+            boost_cd.setText("Boost CD: Active");
+        }
+        else if(player.get_boosted_cd() == 0){
+            boost_cd.setText("Boost CD: Ready");
+        }
+        else
+        boost_cd.setText("Boost CD: " + player.get_boosted_cd());
+    }
     public void update_health(){
     int barWidth = 800;
     int barHeight = 40;
@@ -83,6 +105,8 @@ public class Hud {
                 break;
         }
     }
+
+
 
     public ImageIcon get_sized_image(String filename, int width, int height){
         ImageIcon healthIcon = new ImageIcon(filename);

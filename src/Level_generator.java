@@ -161,8 +161,13 @@ public class Level_generator {
         if (is_hit){
             invurnable_counter++;
             if(invurnable_counter > invurnable_time){
-                System.out.println("Invurnable time over");
-                player_character.set_normal_image();
+                if(!player_character.get_boosted())
+                {
+                    player_character.set_normal_image();
+                }
+                else{
+                    player_character.set_boosted_image();
+                }
                 invurnable_counter = 0;
                 is_hit = false;
             }
@@ -197,5 +202,16 @@ public class Level_generator {
     }
     public Thread get_level_one_thread(){
         return level_one_thread;
+    }
+    public Player_character getPlayer_character(){
+        return player_character;
+    }
+
+    public void update_healt(){
+        hud.update_health();
+    }
+
+    public void update_boost_cd(){
+        hud.update_boost_cd();
     }
 }
