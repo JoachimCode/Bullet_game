@@ -1,54 +1,74 @@
 
-y	java:S127^"XRefactor the code in order to not assign to this loop counter from within the loop body.(êã·ÿÿÿÿÿ8ßĞĞ˜¶1
-s	java:S127f"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK8ßĞĞ˜¶1
-m	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Û¬­8¹ÁÒ˜¶1
-r	java:S117B"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜Ğôúÿÿÿÿ8ßĞĞ˜¶1
-m	java:S117P"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ôì›8ßĞĞ˜¶1
-m	java:S117R"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘¢àœ8ßĞĞ˜¶1
-r	java:S117W"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëƒøãÿÿÿÿÿ8ßĞĞ˜¶1
-m	java:S117Y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó®¨±8ßĞĞ˜¶1
-r	java:S117y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûá»òúÿÿÿÿ8ßĞĞ˜¶1
-r	java:S117y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûá»òúÿÿÿÿ8ßĞĞ˜¶1
-r	java:S117y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûá»òúÿÿÿÿ8ßĞĞ˜¶1
+y	java:S127j"XRefactor the code in order to not assign to this loop counter from within the loop body.(êã·ÿÿÿÿÿ8íúè‚¹1
+s	java:S127r"XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK8íúè‚¹1
+m	java:S117;"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Û¬­8îúè‚¹1
+r	java:S117N"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜Ğôúÿÿÿÿ8îúè‚¹1
+m	java:S117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ôì›8îúè‚¹1
+m	java:S117^"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘¢àœ8îúè‚¹1
+r	java:S117c"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëƒøãÿÿÿÿÿ8îúè‚¹1
+m	java:S117e"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó®¨±8îúè‚¹1
+s	java:S117‡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûá»òúÿÿÿÿ8ïúè‚¹1
+s	java:S117‡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûá»òúÿÿÿÿ8ïúè‚¹1
+s	java:S117‡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûá»òúÿÿÿÿ8ïúè‚¹1
 E
-java:S1604'"(Make this anonymous inner class a lambda(—‚ŸŠ8ßĞĞ˜¶1
+java:S1604*"(Make this anonymous inner class a lambda(—‚ŸŠ8ïúè‚¹1
 g
-java:S1301 "KReplace this "switch" statement by "if" statements to increase readability.(•Ø†e8àĞĞ˜¶1
-n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(™‹š‡ûÿÿÿÿ8áĞĞ˜¶1
-|	java:S116"[Rename this field "player_character" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ…ëíùÿÿÿÿ8ÈÑĞ˜¶1
-t	java:S116"SRename this field "level_on" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆóÛÜúÿÿÿÿ8ÈÑĞ˜¶1
-{	java:S116"ZRename this field "list_of_enemies" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕëÏ°øÿÿÿÿ8ÈÑĞ˜¶1
-{	java:S116"ZRename this field "list_of_bullets" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä“Àƒÿÿÿÿÿ8ÈÑĞ˜¶1
-‚	java:S116"aRename this field "list_of_player_bullets" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¬€øÿÿÿÿ8ÈÑĞ˜¶1
-w	java:S116"VRename this field "hit_checker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áœ‚úÿÿÿÿ8ÈÑĞ˜¶1
-{	java:S116"ZRename this field "invurnable_time" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à»ÿŠıÿÿÿÿ8ÈÑĞ˜¶1
-~	java:S116"]Rename this field "invurnable_counter" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€’Ùûÿÿÿÿ8ÈÑĞ˜¶1
-m	java:S116"QRename this field "is_hit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íˆï´8ÈÑĞ˜¶1
-w	java:S116'"[Rename this field "level_one_thread" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—‚ŸŠ8ÈÑĞ˜¶1
-=	java:S131 ""Add a default case to this switch.(•Ø†e8ØÑĞ˜¶1
+java:S1301#"KReplace this "switch" statement by "if" statements to increase readability.(•Ø†e8ïúè‚¹1
+n	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(™‹š‡ûÿÿÿÿ8ğúè‚¹1
+|	java:S116"[Rename this field "player_character" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ…ëíùÿÿÿÿ8„ûè‚¹1
+t	java:S116"SRename this field "level_on" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆóÛÜúÿÿÿÿ8„ûè‚¹1
+{	java:S116"ZRename this field "list_of_enemies" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕëÏ°øÿÿÿÿ8„ûè‚¹1
+{	java:S116"ZRename this field "list_of_bullets" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä“Àƒÿÿÿÿÿ8„ûè‚¹1
+‚	java:S116"aRename this field "list_of_player_bullets" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¬€øÿÿÿÿ8„ûè‚¹1
+w	java:S116"VRename this field "hit_checker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áœ‚úÿÿÿÿ8„ûè‚¹1
+{	java:S116"ZRename this field "invurnable_time" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à»ÿŠıÿÿÿÿ8„ûè‚¹1
+~	java:S116"]Rename this field "invurnable_counter" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€’Ùûÿÿÿÿ8„ûè‚¹1
+v	java:S116"URename this field "is_boosted" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úø´ìÿÿÿÿÿ8„ûè‚¹1
+x	java:S116"WRename this field "boosted_time" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïáêÁşÿÿÿÿ8œ¶é‚¹1
+u	java:S116"ZRename this field "boosted_counter" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êÙÛ8“íé‚¹1
+m	java:S116"QRename this field "is_hit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íˆï´8„ûè‚¹1
+w	java:S116*"[Rename this field "level_one_thread" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—‚ŸŠ8„ûè‚¹1
+=	java:S131#""Add a default case to this switch.(•Ø†e8ˆûè‚¹1
 H
-java:S16027",Remove useless curly braces around statement(°›ìU8ØÑĞ˜¶1
+java:S1602C",Remove useless curly braces around statement(°›ìU8Œûè‚¹1
 i
-java:S16127"MReplace this lambda with method reference 'current_enemy::movement_algoritm'.(°›ìU8ØÑĞ˜¶1
+java:S1612C"MReplace this lambda with method reference 'current_enemy::movement_algoritm'.(°›ìU8ûè‚¹1
 H
-java:S1602C",Remove useless curly braces around statement(°›ìU8ØÑĞ˜¶1
+java:S1602O",Remove useless curly braces around statement(°›ìU8ûè‚¹1
 ]
-java:S1612C"AReplace this lambda with method reference 'current_bullet::fire'.(°›ìU8ØÑĞ˜¶1
+java:S1612O"AReplace this lambda with method reference 'current_bullet::fire'.(°›ìU8ûè‚¹1
 H
-java:S1602S",Remove useless curly braces around statement(°›ìU8ØÑĞ˜¶1
+java:S1602_",Remove useless curly braces around statement(°›ìU8ûè‚¹1
 ]
-java:S1612S"AReplace this lambda with method reference 'current_bullet::fire'.(°›ìU8ØÑĞ˜¶1
-L	java:S106b"+Replace this use of System.out by a logger.(çòøøûÿÿÿÿ8ØÑĞ˜¶1
-j	java:S100m"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë‰ä’8ØÑĞ˜¶1
-X	java:S125s"<This block of commented-out lines of code should be removed.(£ñÛõ8ØÑĞ˜¶1
-j	java:S100u"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ë“«8ØÑĞ˜¶1
-o	java:S100y"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûá»òúÿÿÿÿ8ØÑĞ˜¶1
-j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ÛÏ‘8ØÑĞ˜¶1
-k	java:S100†"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛŠÃê8ØÑĞ˜¶1
-k	java:S100Œ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óû¾÷8ØÑĞ˜¶1
-M	java:S106"+Replace this use of System.out by a logger.(±Ô¶şøÿÿÿÿ8èÑĞ˜¶1
-k	java:S100›"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÄÁ‹8èÑĞ˜¶1
-T
-java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8ï¬ß˜¶1
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ï¬ß˜¶1
+java:S1612_"AReplace this lambda with method reference 'current_bullet::fire'.(°›ìU8ò¦Ú´¹1
+L	java:S106n"+Replace this use of System.out by a logger.(çòøøûÿÿÿÿ8ûè‚¹1
+j	java:S100y"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë‰ä’8ûè‚¹1
+Y	java:S125"<This block of commented-out lines of code should be removed.(£ñÛõ8‘ûè‚¹1
+k	java:S100ƒ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ë“«8‘ûè‚¹1
+p	java:S100‡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûá»òúÿÿÿÿ8‘ûè‚¹1
+k	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ÛÏ‘8’ûè‚¹1
+k	java:S100˜"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛŠÃê8“ûè‚¹1
+I
+java:S1602š",Remove useless curly braces around statement(°›ìU8“ûè‚¹1
+k	java:S100 "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óû¾÷8”ûè‚¹1
+j	java:S100¸"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”Ø l8­³†Ÿº1
+d
+java:S1126¹"AReplace this if-then-else statement by a single return statement.(Õ€ñæşÿÿÿÿ8­³†Ÿº1
+k	java:S100Á"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·î£”8®³†Ÿº1
+k	java:S100Å"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô¦‡‚8®³†Ÿº1
+k	java:S100È"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ÙÊó8®³†Ÿº1
+k	java:S100Ë"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÄÁ‹8¯³†Ÿº1
+p	java:S100Î"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÜÎşÿÿÿÿ8¯³†Ÿº1
+p	java:S100Ò"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Åİûùşÿÿÿÿ8¯³†Ÿº1
+p	java:S100Ö"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ˜Şÿÿÿÿÿ8°³†Ÿº1
+[
+java:S3398¸">Move this method into the anonymous class declared at line 42.(”Ø l8°³†Ÿº1
+P
+java:S1068".Remove this unused "is_boosted" private field.(úø´ìÿÿÿÿÿ8•ûè‚¹1
+R
+java:S1068"0Remove this unused "boosted_time" private field.(ïáêÁşÿÿÿÿ8»¶é‚¹1
+O
+java:S1068"3Remove this unused "boosted_counter" private field.(êÙÛ8§íé‚¹1
+ã
+java:S6541,"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 70 to 64, Complexity from 16 to 14, Nesting Level from 3 to 2, Number of Variables from 11 to 6.(“–ış8–ûè‚¹1

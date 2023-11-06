@@ -1,11 +1,15 @@
 
-n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(­Ã‰¨ùÿÿÿÿ8Ûû—¶1
-o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑôßÏøÿÿÿÿ8 Ûû—¶1
+r	java:S117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å³‰ øÿÿÿÿ8Ò³†Ÿº1
+h
+java:S1301."KReplace this "switch" statement by "if" statements to increase readability.(µàÑ‹8Ò³†Ÿº1
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(­Ã‰¨ùÿÿÿÿ8­Ô†½¸1
+o	java:S100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑôßÏøÿÿÿÿ8ô³†Ÿº1
 ‚
-java:S1217"`Call the method Thread.start() to execute the content of the run() method in a dedicated thread.(—ìºËûÿÿÿÿ8 Ûû—¶1
+java:S1217#"`Call the method Thread.start() to execute the content of the run() method in a dedicated thread.(—ìºËûÿÿÿÿ8ö³†Ÿº1
 }
-java:S1217"`Call the method Thread.start() to execute the content of the run() method in a dedicated thread.(«ÑÚ¾8Îˆ˜¶1
-W
-java:S1128":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™ş8Îˆ˜¶1
-Q
-java:S1128"4Remove this unused import 'java.util.logging.Level'.(…µÛ¶8Îˆ˜¶1
+java:S1217$"`Call the method Thread.start() to execute the content of the run() method in a dedicated thread.(«ÑÚ¾8÷³†Ÿº1
+o	java:S100,"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ¢û şÿÿÿÿ8÷³†Ÿº1
+>	java:S131.""Add a default case to this switch.(µàÑ‹8ü³†Ÿº1
+u	java:S116;"YRename this field "seconds_passed" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¡‰Ã8´†Ÿº1
+G	java:S106B"+Replace this use of System.out by a logger.(¼‹—¸8†´†Ÿº1
+F	java:S106I"+Replace this use of System.out by a logger.(­ı‹a8‡´†Ÿº1

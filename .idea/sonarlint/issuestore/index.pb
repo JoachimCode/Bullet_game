@@ -43,3 +43,7 @@ Q.idea/sonarlint/securityhotspotstore/e/6/e6d557c8b9c6675085c8adba69d43c96ad144f
 src/Hud.java,4\d\4dacba0cf37dfe64745a7c6df09295a92e3a8c2a
 B
 src/Game_time.java,5\5\55bcbce037efecddaecee0b9e47e657c9f9aecb9
+@
+src/Buttons.java,2\b\2b602a6432da6130f87f50f0cf1aa62c93c4d6f6
+Å
+Q.idea/sonarlint/securityhotspotstore/5/5/55bcbce037efecddaecee0b9e47e657c9f9aecb9,f\2\f2a51e52dd8721fffb2c13602a8ebe06cd132f62
