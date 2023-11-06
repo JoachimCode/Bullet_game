@@ -14,6 +14,7 @@ public class Hud {
     JPanel health_bar;
     JLabel health_image;
     Player_character player;
+    JLabel boost_image;
     JLayeredPane frame;
     JLayeredPane death_screen = new JLayeredPane();
     JLabel death_label = new JLabel();
@@ -37,11 +38,21 @@ public class Hud {
 
         //cd
         boost_cd = new JLabel();
-        boost_cd.setBounds(1550, 950, 100, 50);
+        boost_cd.setForeground(Color.RED);
+        boost_cd.setFont(new Font("Serif", Font.BOLD, 15));
+        boost_cd.setBounds(1550, 950, 150, 50);
         boost_cd.setText("Boost CD: " + player.get_boosted_cd());
         hud.add(boost_cd);
         frame.add(boost_cd, JLayeredPane.MODAL_LAYER);
         update_boost_cd();
+
+        //BOOSt image
+        boost_image = new JLabel();
+        boost_image.setIcon(get_sized_image("boost.png", 100, 100));
+        boost_image.setBounds(1550, 920, 100, 100);
+        hud.add(boost_image);
+        frame.add(boost_image, JLayeredPane.MODAL_LAYER);
+
 
 
         //Add the health bar
