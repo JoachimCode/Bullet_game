@@ -59,7 +59,7 @@ public class Bullet
             y = y - speed;
             self_sprite.setX(x);
             self_sprite.setY(y);
-            screen.refresh_frame();
+            //screen.refresh_frame();
             rw_lock.writeLock().unlock();
         }
 
@@ -71,7 +71,7 @@ public class Bullet
             y = y + speed;
             self_sprite.setX(x);
             self_sprite.setY(y);
-            screen.refresh_frame();
+            //screen.refresh_frame();
             rw_lock.writeLock().unlock();
         }
 
@@ -83,7 +83,7 @@ public class Bullet
             x = x - speed;
             self_sprite.setX(x);
             self_sprite.setY(y);
-            screen.refresh_frame();
+            //screen.refresh_frame();
             rw_lock.writeLock().unlock();
         }
     }
@@ -94,7 +94,7 @@ public class Bullet
             x = x + speed;
             self_sprite.setX(x);
             self_sprite.setY(y);
-            screen.refresh_frame();
+            //screen.refresh_frame();
             rw_lock.writeLock().unlock();
         }
     }

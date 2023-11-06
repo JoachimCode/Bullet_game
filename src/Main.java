@@ -18,7 +18,7 @@ public class Main {
         Level_generator level_one = new Level_generator(1, screen, character, hud);
 
         Move listener = new Move(character, root, screen, hud);
-        Game_time game_time = new Game_time(level_one, listener, character);
+        Game_time game_time = new Game_time(level_one, listener, character, screen);
         Buttons buttons = new Buttons(hud, level_one, game_time, screen);
         screen.refresh_frame();
 

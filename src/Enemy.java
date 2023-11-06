@@ -131,7 +131,7 @@ public class Enemy {
             y_cord = y_cord - movementspeed;
             self_sprite.setX(x_cord);
             self_sprite.setY(y_cord);
-            screen.refresh_frame();
+            //screen.refresh_frame();
             rw_lock.writeLock().unlock();
         }
 
@@ -143,7 +143,7 @@ public class Enemy {
             y_cord = y_cord + movementspeed;
             self_sprite.setX(x_cord);
             self_sprite.setY(y_cord);
-            screen.refresh_frame();
+            //screen.refresh_frame();
             rw_lock.writeLock().unlock();
         }
     }
@@ -154,7 +154,7 @@ public class Enemy {
             x_cord = x_cord - movementspeed;
             self_sprite.setX(x_cord);
             self_sprite.setY(y_cord);
-            screen.refresh_frame();
+            //screen.refresh_frame();
             rw_lock.writeLock().unlock();
         }
     }
@@ -165,7 +165,7 @@ public class Enemy {
             x_cord = x_cord + movementspeed;
             self_sprite.setX(x_cord);
             self_sprite.setY(y_cord);
-            screen.refresh_frame();
+            //screen.refresh_frame();
             rw_lock.writeLock().unlock();
         }
     }

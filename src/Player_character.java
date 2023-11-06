@@ -118,7 +118,7 @@ public class Player_character
             y_cord = y_cord - movementspeed;
             player_character.setX(x_cord);
             player_character.setY(y_cord);
-            screen.refresh_frame();
+            //screen.refresh_frame();
             rw_lock.writeLock().unlock();
         }
 
@@ -130,7 +130,7 @@ public class Player_character
             y_cord = y_cord + movementspeed;
             player_character.setX(x_cord);
             player_character.setY(y_cord);
-            screen.refresh_frame();
+            //screen.refresh_frame();
             rw_lock.writeLock().unlock();
         }
     }
@@ -142,7 +142,7 @@ public class Player_character
             x_cord = x_cord - movementspeed;
             player_character.setX(x_cord);
             player_character.setY(y_cord);
-            screen.refresh_frame();
+            //screen.refresh_frame();
             rw_lock.writeLock().unlock();
         }
     }
@@ -153,7 +153,7 @@ public class Player_character
             x_cord = x_cord + movementspeed;
             player_character.setX(x_cord);
             player_character.setY(y_cord);
-            screen.refresh_frame();
+            //screen.refresh_frame();
             rw_lock.writeLock().unlock();
         }
     }
@@ -233,7 +233,7 @@ public class Player_character
         rw_lock.writeLock().lock();
         current_health = current_health - 1;
         rw_lock.writeLock().unlock();
-        screen.refresh_frame();
+        //screen.refresh_frame();
     }
     public Entity_Image get_hp_bar(){
         rw_lock.readLock().lock();

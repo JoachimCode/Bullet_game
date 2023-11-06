@@ -26,6 +26,7 @@ public class Entity_Image{
 
             // Load and resize the image
             Image originalImage = image;
+
             this.image = originalImage.getScaledInstance(width, height, Image.SCALE_SMOOTH);
         }
 

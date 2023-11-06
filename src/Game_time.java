@@ -9,8 +9,10 @@ public class Game_time
   private Level_generator level;
   private Move move;
   private Player_character character;
-  public Game_time(Level_generator level, Move move, Player_character character)
+  private Screen screen;
+  public Game_time(Level_generator level, Move move, Player_character character, Screen screen)
   {
+    this.screen = screen;
     this.character = character;
     this.level = level;
     this.move = move;
@@ -32,6 +34,7 @@ public class Game_time
 
   public void run_all(){
     if (level.get_level_on()) {
+      screen.refresh_frame();
       move.get_thread().run();
       level.get_level_one_thread().run();
     }
@@ -49,6 +52,7 @@ public class Game_time
           @Override
           public void run() {
             level.getPlayer_character().set_boosted(false);
+
             level.getPlayer_character().reset_boost();
           }
         }, 3000);
@@ -79,6 +83,7 @@ public class Game_time
   }
 }
 }
+
 
 
 
