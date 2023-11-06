@@ -1,65 +1,107 @@
 
 h
-java:S1192<"FDefine a constant instead of duplicating this literal "right" 3 times.(Å‡ùşÿÿÿÿ8‰÷¦õ³1
+java:S1192F"FDefine a constant instead of duplicating this literal "right" 3 times.(Å‡ùşÿÿÿÿ8Ğ¹†Ÿº1
 i
-java:S11921"GDefine a constant instead of duplicating this literal "bullet" 5 times.(…¶‡Èÿÿÿÿÿ8‰÷¦õ³1
-m	java:S117L"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©ĞÈÔ8‰÷¦õ³1
-r	java:S117S"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒĞ»ûÿÿÿÿ8‰÷¦õ³1
-m	java:S117Y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡€Ä8‰÷¦õ³1
-s	java:S117À"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘î”ÿÿÿÿÿ8‰÷¦õ³1
-s	java:S117È"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£›ä‰şÿÿÿÿ8‰÷¦õ³1
-n	java:S117Û"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öô÷Î8‰÷¦õ³1
+java:S1192;"GDefine a constant instead of duplicating this literal "bullet" 5 times.(…¶‡Èÿÿÿÿÿ8Ğ¹†Ÿº1
+m	java:S117V"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©ĞÈÔ8Ò¹†Ÿº1
+r	java:S117]"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒĞ»ûÿÿÿÿ8Ò¹†Ÿº1
+m	java:S117c"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡€Ä8Ò¹†Ÿº1
+s	java:S117Õ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘î”ÿÿÿÿÿ8Ó¹†Ÿº1
+s	java:S117İ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£›ä‰şÿÿÿÿ8Ó¹†Ÿº1
+n	java:S117ğ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öô÷Î8Ó¹†Ÿº1
+s	java:S117¹"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™òŠÜùÿÿÿÿ8Ó¹†Ÿº1
+s	java:S117¿"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âç™İşÿÿÿÿ8Ó¹†Ÿº1
+n	java:S117Ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡¶‚„8Ó¹†Ÿº1
+n	java:S117Ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿìè¶8Ó¹†Ÿº1
+n	java:S117Õ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Îµ˜•8Ó¹†Ÿº1
+Š
+java:S1488¿"gImmediately return this expression instead of assigning it to the temporary variable "temp_is_boosted".(âç™İşÿÿÿÿ8Ô¹†Ÿº1
+…
+java:S1488Ñ"gImmediately return this expression instead of assigning it to the temporary variable "temp_boosted_cd".(ÿìè¶8Õ¹†Ÿº1
+z
+java:S1488ä"\Immediately return this expression instead of assigning it to the temporary variable "temp".(ˆ‚8Õ¹†Ÿº1
 h	java:S101
-"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(û”è>8‰÷¦õ³1
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(û”è>8õˆ‡ƒ¹1
 <
-java:S1700!"Rename field "player_character"(Ê´äç8‰÷¦õ³1
+java:S1700+"Rename field "player_character"(Ê´äç8Ù¹†Ÿº1
 ‰
-java:S4165·"kRemove this useless assignment; "movementspeed" already holds the assigned value along all execution paths.(”ËÌš8•ïÜõ³1
-x	java:S116"WRename this field "bullet_speed" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ßéàıÿÿÿÿ8˜÷¦õ³1
-{	java:S116"ZRename this field "attack_cooldown" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù©ÌÖûÿÿÿÿ8Ş¯°õ³1
-n	java:S116"RRename this field "base_ms" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê‹çì8˜÷¦õ³1
-z	java:S116"YRename this field "current_health" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İÇìøÿÿÿÿ8˜÷¦õ³1
-q	java:S116"URename this field "max_health" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”§¢•8˜÷¦õ³1
-r	java:S116"QRename this field "x_cord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ÆĞÃûÿÿÿÿ8˜÷¦õ³1
-r	java:S116"QRename this field "y_cord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—¯ÙÄüÿÿÿÿ8˜÷¦õ³1
-q	java:S116"PRename this field "min_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ì•çùÿÿÿÿ8˜÷¦õ³1
-q	java:S116"PRename this field "min_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯¤¶üÿÿÿÿ8˜÷¦õ³1
-l	java:S116"PRename this field "max_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô–é´8˜÷¦õ³1
-l	java:S116"PRename this field "max_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é¡ªÌ8˜÷¦õ³1
-p	java:S116"TRename this field "max_y_hud" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦Ê¨Ú8—×˜¶1
-r	java:S116"QRename this field "hp_bar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Öªóüùÿÿÿÿ8˜÷¦õ³1
-|	java:S116"aRename this field "list_of_player_bullets" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğæ¾G8˜÷¦õ³1
-w	java:S116!"[Rename this field "player_character" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê´äç8˜÷¦õ³1
-n	java:S116#"RRename this field "rw_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İë°®8˜÷¦õ³1
+java:S4165È"kRemove this useless assignment; "movementspeed" already holds the assigned value along all execution paths.(”ËÌš8•º†Ÿº1
+t	java:S116"XRename this field "attack_damage" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áôò8—º†Ÿº1
+n	java:S116"RRename this field "base_ad" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶èÔ8—º†Ÿº1
+}	java:S116"\Rename this field "base_bullet_speed" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ½ò‘úÿÿÿÿ8—º†Ÿº1
+x	java:S116"WRename this field "bullet_speed" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ßéàıÿÿÿÿ8˜º†Ÿº1
+{	java:S116"ZRename this field "attack_cooldown" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù©ÌÖûÿÿÿÿ8˜º†Ÿº1
+n	java:S116"RRename this field "base_ms" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê‹çì8˜º†Ÿº1
+z	java:S116"YRename this field "current_health" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İÇìøÿÿÿÿ8˜º†Ÿº1
+q	java:S116"URename this field "max_health" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”§¢•8˜º†Ÿº1
+n	java:S116"RRename this field "start_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÓĞ 8˜º†Ÿº1
+n	java:S116"RRename this field "start_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½Ğø8˜º†Ÿº1
+r	java:S116"QRename this field "x_cord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ÆĞÃûÿÿÿÿ8˜º†Ÿº1
+r	java:S116"QRename this field "y_cord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—¯ÙÄüÿÿÿÿ8˜º†Ÿº1
+q	java:S116"PRename this field "min_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ì•çùÿÿÿÿ8˜º†Ÿº1
+q	java:S116"PRename this field "min_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯¤¶üÿÿÿÿ8˜º†Ÿº1
+l	java:S116"PRename this field "max_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô–é´8™º†Ÿº1
+l	java:S116"PRename this field "max_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é¡ªÌ8™º†Ÿº1
+p	java:S116"TRename this field "max_y_hud" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦Ê¨Ú8™º†Ÿº1
+r	java:S116 "QRename this field "hp_bar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Öªóüùÿÿÿÿ8™º†Ÿº1
+|	java:S116!"aRename this field "list_of_player_bullets" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğæ¾G8™º†Ÿº1
+v	java:S116""URename this field "is_boosted" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úø´ìÿÿÿÿÿ8™º†Ÿº1
+y	java:S116#"XRename this field "is_boosted_cd" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ƒ’ úÿÿÿÿ8™º†Ÿº1
+q	java:S116$"URename this field "boosted_cd" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ñ¿Ù8™º†Ÿº1
+v	java:S116%"ZRename this field "boosted_base_cd" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö³©ü8™º†Ÿº1
+w	java:S116+"[Rename this field "player_character" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê´äç8™º†Ÿº1
+n	java:S116-"RRename this field "rw_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İë°®8™º†Ÿº1
+>
+java:S1170"!Make this final field static too.(ÚÓĞ 8šº†Ÿº1
+>
+java:S1170"!Make this final field static too.(½Ğø8šº†Ÿº1
+
+java:S4144Ä"^Update this method so that its implementation is not identical to "set_hit_image" on line 248.(©öòŸûÿÿÿÿ8º†Ÿº1
 
-java:S1130%"qRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from constructor's body.(…Ú«Å8˜÷¦õ³1
-j	java:S100J"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬Ä°à8˜÷¦õ³1
-j	java:S100Q"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥®ñ8˜÷¦õ³1
-o	java:S100X"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñŒëîÿÿÿÿÿ8˜÷¦õ³1
-j	java:S100i"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÄ¢²8˜÷¦õ³1
-i	java:S100u"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïàø38˜÷¦õ³1
-j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ˆ™\8˜÷¦õ³1
-p	java:S100Œ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş»½ÿÿÿÿÿ8¨÷¦õ³1
-p	java:S100˜"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì™Ëÿÿÿÿÿ8¨÷¦õ³1
-k	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âİ’º8¨÷¦õ³1
-k	java:S100¡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó¡ô¥8¨÷¦õ³1
-j	java:S100¥"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë²h8¨÷¦õ³1
-k	java:S100ª"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­öí8¨÷¦õ³1
-k	java:S100°"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ÆÌâ8¨÷¦õ³1
-p	java:S100¶"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡–¥Èşÿÿÿÿ8¨÷¦õ³1
+java:S1130/"qRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from constructor's body.(…Ú«Å8¬º†Ÿº1
+j	java:S100T"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬Ä°à8²º†Ÿº1
+j	java:S100["NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥®ñ8´º†Ÿº1
+o	java:S100b"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñŒëîÿÿÿÿÿ8·º†Ÿº1
+j	java:S100s"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÄ¢²8ºº†Ÿº1
+i	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïàø38¼º†Ÿº1
+j	java:S100‹"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ˆ™\8¾º†Ÿº1
+p	java:S100–"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş»½ÿÿÿÿÿ8¿º†Ÿº1
+k	java:S100¡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ØÖğ8Áº†Ÿº1
+k	java:S100¥"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶ãİ8Áº†Ÿº1
+p	java:S100©"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì™Ëÿÿÿÿÿ8Áº†Ÿº1
+k	java:S100®"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âİ’º8Âº†Ÿº1
+k	java:S100²"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó¡ô¥8Âº†Ÿº1
+j	java:S100¶"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë²h8Ãº†Ÿº1
+k	java:S100»"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­öí8Äº†Ÿº1
+k	java:S100Á"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ÆÌâ8Åº†Ÿº1
+p	java:S100Ç"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…‚Ñªøÿÿÿÿ8Åº†Ÿº1
 M
-java:S1656·"/Remove or correct this useless self-assignment.(”ËÌš8§ïÜõ³1
-p	java:S100º"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Šê¡¸ÿÿÿÿÿ8¨÷¦õ³1
-k	java:S100¾"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Şò·Ø8¨÷¦õ³1
-j	java:S100Æ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô¡Õ&8¨÷¦õ³1
-k	java:S100Ì"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıæøˆ8¨÷¦õ³1
-k	java:S100Ó"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»¼íÅ8¨÷¦õ³1
-p	java:S100Ù"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•¥Ÿıÿÿÿÿ8¨÷¦õ³1
-k	java:S100à"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£€ù8¨÷¦õ³1
-k	java:S100ã"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÔç¶8§×˜¶1
-k	java:S100é"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëí³8§×˜¶1
-k	java:S100î"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şÜª±8²•¨õ³1
-K
-java:S1068".Remove this unused "max_health" private field.(”§¢•8¨÷¦õ³1
+java:S1656È"/Remove or correct this useless self-assignment.(”ËÌš8Æº†Ÿº1
+p	java:S100Ë"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãâÑÆıÿÿÿÿ8Æº†Ÿº1
+p	java:S100Ï"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Šê¡¸ÿÿÿÿÿ8Æº†Ÿº1
+k	java:S100Ó"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Şò·Ø8Çº†Ÿº1
+j	java:S100Û"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô¡Õ&8Çº†Ÿº1
+k	java:S100á"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıæøˆ8Èº†Ÿº1
+k	java:S100è"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»¼íÅ8Éº†Ÿº1
+p	java:S100î"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•¥Ÿıÿÿÿÿ8Êº†Ÿº1
+k	java:S100õ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£€ù8Ëº†Ÿº1
+k	java:S100ø"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÔç¶8Ìº†Ÿº1
+k	java:S100ş"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëí³8Íº†Ÿº1
+k	java:S100„"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º‹‡8Íº†Ÿº1
+p	java:S100‰"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷×ñäøÿÿÿÿ8Îº†Ÿº1
+p	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ìêëÿÿÿÿÿ8Ğº†Ÿº1
+k	java:S100–"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şÜª±8Ñº†Ÿº1
+j	java:S100š"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†¨ıj8Òº†Ÿº1
+p	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö ±ùÿÿÿÿ8Òº†Ÿº1
+p	java:S100¬"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö‚—Ùüÿÿÿÿ8Óº†Ÿº1
+p	java:S100¹"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™òŠÜùÿÿÿÿ8Õº†Ÿº1
+k	java:S100¾"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ïÅ¬8×º†Ÿº1
+p	java:S100Ä"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©öòŸûÿÿÿÿ8×º†Ÿº1
+k	java:S100Ê"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡¶‚„8Ùº†Ÿº1
+k	java:S100Ğ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğƒªú8Úº†Ÿº1
+p	java:S100Ô"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä×Ú›şÿÿÿÿ8Úº†Ÿº1
+k	java:S100ã"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤äÏ˜8Ûº†Ÿº1
 F
-java:S1068")Remove this unused "max_y" private field.(é¡ªÌ8§×˜¶1
+java:S1068")Remove this unused "max_y" private field.(é¡ªÌ8Üº†Ÿº1
+S
+java:S1068#"1Remove this unused "is_boosted_cd" private field.(™ƒ’ úÿÿÿÿ8Üº†Ÿº1

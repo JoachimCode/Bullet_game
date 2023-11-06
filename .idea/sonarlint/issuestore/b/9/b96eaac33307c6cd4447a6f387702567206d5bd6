@@ -1,25 +1,41 @@
 
-k	java:S117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èØÉŸûÿÿÿÿ
-k	java:S117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èØÉŸûÿÿÿÿ
-W
-java:S4973b"<Strings and Boxed types should be compared using "equals()".(ÙûÒÄøÿÿÿÿ
-g	java:S116"RRename this field "rw_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ýë°®
-9
-java:S1948"#Make "t" transient or serializable.(®³Ã¸
-C
-java:S1948"(Make "buffer" transient or serializable.(û®áïþÿÿÿÿ
+
+java:S1319u"pThe type of "list_of_enemies" should be an interface such as "List" rather than the implementation "LinkedList".(Ðé¢á8´Î˜Ö¸1
+r	java:S117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄóòÀúÿÿÿÿ8µÎ˜Ö¸1
+r	java:S117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄóòÀúÿÿÿÿ8µÎ˜Ö¸1
+r	java:S117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄóòÀúÿÿÿÿ8µÎ˜Ö¸1
+m	java:S117?"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øÀ…Ô8µÎ˜Ö¸1
+m	java:S117@"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û–ïä8µÎ˜Ö¸1
+r	java:S117A"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»«æûøÿÿÿÿ8µÎ˜Ö¸1
+r	java:S117B"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øî¦ôúÿÿÿÿ8µÎ˜Ö¸1
+l	java:S117C"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç–ä8íˆšÖ¸1
+r	java:S117U"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èØÉŸûÿÿÿÿ8µÎ˜Ö¸1
+r	java:S117U"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èØÉŸûÿÿÿÿ8µÎ˜Ö¸1
+m	java:S117u"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ðé¢á8µÎ˜Ö¸1
+^
+java:S4973~"<Strings and Boxed types should be compared using "equals()".(ÙûÒÄøÿÿÿÿ8µÎ˜Ö¸1
+n	java:S116"RRename this field "rw_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ýë°®8¿Î˜Ö¸1
+v	java:S116"ZRename this field "list_of_enemies" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓìÄÅ8¿Î˜Ö¸1
 @
-java:S1948"*Make "elements" transient or serializable.(æéÊ
-c	java:S100:"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºäü¤
-h	java:S100>"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èØÉŸûÿÿÿÿ
-c	java:S100L"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«‹Ë‡
-Q	java:S125E"<This block of commented-out lines of code should be removed.(Ë´óº
-c	java:S100R"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ€Û
-c	java:S100W"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÀš—
-c	java:S100`"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹§ú
+java:S1948"#Make "t" transient or serializable.(®³Ã¸8ÁÎ˜Ö¸1
+J
+java:S1948"(Make "buffer" transient or serializable.(û®áïþÿÿÿÿ8ÁÎ˜Ö¸1
+G
+java:S1948"*Make "elements" transient or serializable.(æéÊ8ÁÎ˜Ö¸1
+N
+java:S1948"1Make "list_of_enemies" transient or serializable.(ÓìÄÅ8ÁÎ˜Ö¸1
+o	java:S100>"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄóòÀúÿÿÿÿ8ÅÎ˜Ö¸1
+j	java:S100Q"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºäü¤8ÇÎ˜Ö¸1
+o	java:S100U"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èØÉŸûÿÿÿÿ8ÇÎ˜Ö¸1
+j	java:S100c"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«‹Ë‡8ÈÎ˜Ö¸1
+X	java:S125\"<This block of commented-out lines of code should be removed.(Ë´óº8ÈÎ˜Ö¸1
+j	java:S100i"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ€Û8ÈÎ˜Ö¸1
+j	java:S100n"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÀš—8ÉÎ˜Ö¸1
+j	java:S100u"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ðé¢á8ÉÎ˜Ö¸1
+j	java:S100|"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹§ú8ÊÎ˜Ö¸1
+[
+java:S1128"9Remove this unused import 'java.awt.image.BufferedImage'.(×íÐ‡þÿÿÿÿ8‚‰šÖ¸1
 T
-java:S1128"9Remove this unused import 'java.awt.image.BufferedImage'.(×íÐ‡þÿÿÿÿ
+java:S1128"2Remove this unused import 'java.nio.DoubleBuffer'.(«×·ûÿÿÿÿ8‚‰šÖ¸1
 M
-java:S1128"2Remove this unused import 'java.nio.DoubleBuffer'.(«×·ûÿÿÿÿ
-F
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8‚‰šÖ¸1

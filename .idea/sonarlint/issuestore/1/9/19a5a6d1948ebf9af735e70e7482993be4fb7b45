@@ -1,49 +1,61 @@
 
+s
+java:S1192²"PDefine a constant instead of duplicating this literal "bullet_down.png" 4 times.(…¶‡Èÿÿÿÿÿ8âÃ¼¸1
 b
-java:S11922"FDefine a constant instead of duplicating this literal "right" 5 times.(¬ÚÚ8‚Ú˜¶1
-j
-java:S1192›"GDefine a constant instead of duplicating this literal "bullet" 5 times.(…¶‡Èÿÿÿÿÿ8‚Ú˜¶1
+java:S11929"FDefine a constant instead of duplicating this literal "right" 8 times.(¬ÚÚ8âÃ¼¸1
+k
+java:S1192²"HDefine a constant instead of duplicating this literal "bullet" 10 times.(…¶‡Èÿÿÿÿÿ8âÃ¼¸1
 
-java:S1319"pThe type of "list_of_bullets" should be an interface such as "List" rather than the implementation "LinkedList".(©…ÊÃ8‚Ú˜¶1
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©…ÊÃ8‚Ú˜¶1
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©…ÊÃ8‚Ú˜¶1
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©…ÊÃ8‚Ú˜¶1
-m	java:S117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡€Ä8‚Ú˜¶1
-r	java:S117]"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘î”ÿÿÿÿÿ8‚Ú˜¶1
-r	java:S117e"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£›ä‰şÿÿÿÿ8‚Ú˜¶1
-n	java:S117Ğ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï³ıÒ8‚Ú˜¶1
+java:S1319""pThe type of "list_of_bullets" should be an interface such as "List" rather than the implementation "LinkedList".(©…ÊÃ8âÃ¼¸1
+m	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©…ÊÃ8âÃ¼¸1
+m	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©…ÊÃ8âÃ¼¸1
+m	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©…ÊÃ8âÃ¼¸1
+m	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡€Ä8âÃ¼¸1
+m	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡€Ä8âÃ¼¸1
+r	java:S117t"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘î”ÿÿÿÿÿ8âÃ¼¸1
+r	java:S117|"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£›ä‰şÿÿÿÿ8âÃ¼¸1
+n	java:S117‹"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï³ıÒ8âÃ¼¸1
 n
-java:S1301¿"KReplace this "switch" statement by "if" statements to increase readability.(Ò“ÿšùÿÿÿÿ8‚Ú˜¶1
-v	java:S116"ZRename this field "attack_cooldown" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€ºÆú8¡‚Ú˜¶1
-u	java:S116"YRename this field "long_attack_cd" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Âõ»«8¡‚Ú˜¶1
-m	java:S116"QRename this field "x_cord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ›úÑ8¡‚Ú˜¶1
-r	java:S116"QRename this field "y_cord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö®‚åüÿÿÿÿ8¡‚Ú˜¶1
-r	java:S116"VRename this field "self_sprite" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğË©Î8¡‚Ú˜¶1
-x	java:S116"WRename this field "bullet_speed" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êºíıÿÿÿÿ8¡‚Ú˜¶1
-q	java:S116"PRename this field "min_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ì•çùÿÿÿÿ8¡‚Ú˜¶1
-q	java:S116"PRename this field "min_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯¤¶üÿÿÿÿ8¡‚Ú˜¶1
-l	java:S116"PRename this field "max_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô–é´8¡‚Ú˜¶1
-l	java:S116"PRename this field "max_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é¡ªÌ8¡‚Ú˜¶1
-v	java:S116"ZRename this field "list_of_bullets" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦¼«î8¡‚Ú˜¶1
-n	java:S116"RRename this field "rw_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İë°®8¡‚Ú˜¶1
-z	java:S116"YRename this field "bullet_counter" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡¸Ãşÿÿÿÿ8¡‚Ú˜¶1
-j	java:S100("NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£€ù8¡‚Ú˜¶1
-o	java:S100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñŒëîÿÿÿÿÿ8¡‚Ú˜¶1
-o	java:S100>"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ø–üÿÿÿÿ8¡‚Ú˜¶1
-j	java:S100N"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­öí8¡‚Ú˜¶1
-j	java:S100T"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ÆÌâ8¡‚Ú˜¶1
-j	java:S100["NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Şò·Ø8¡‚Ú˜¶1
-i	java:S100c"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô¡Õ&8¡‚Ú˜¶1
-j	java:S100i"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÄ¢²8¡‚Ú˜¶1
-i	java:S100u"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïàø38¡‚Ú˜¶1
-j	java:S100€"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ˆ™\8¡‚Ú˜¶1
-p	java:S100‹"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş»½ÿÿÿÿÿ8¡‚Ú˜¶1
-D	java:S131¿""Add a default case to this switch.(Ò“ÿšùÿÿÿÿ8¡‚Ú˜¶1
-k	java:S100Î"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§Ò¿ª8°‚Ú˜¶1
-k	java:S100Õ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø³ƒ‰8°‚Ú˜¶1
-k	java:S100Û"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»¼íÅ8ªúŞ˜¶1
-k	java:S100á"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡˜¨–8°‚Ú˜¶1
+java:S1301ò"KReplace this "switch" statement by "if" statements to increase readability.(Ò“ÿšùÿÿÿÿ8âÃ¼¸1
+v	java:S116"ZRename this field "attack_cooldown" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€ºÆú8¢Ä¼¸1
+z	java:S116"YRename this field "long_attack_cd" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á·ƒéùÿÿÿÿ8¢Ä¼¸1
+m	java:S116"QRename this field "max_hp" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌàŠ8¢Ä¼¸1
+m	java:S116"QRename this field "x_cord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ›úÑ8¢Ä¼¸1
+r	java:S116"QRename this field "y_cord" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö®‚åüÿÿÿÿ8¢Ä¼¸1
+x	java:S116"WRename this field "x_cord_start" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üÌ©Ëşÿÿÿÿ8¢Ä¼¸1
+s	java:S116"WRename this field "y_cord_start" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œª–µ8¢Ä¼¸1
+r	java:S116"VRename this field "self_sprite" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğË©Î8¢Ä¼¸1
+x	java:S116"WRename this field "bullet_speed" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êºíıÿÿÿÿ8¢Ä¼¸1
+q	java:S116"PRename this field "min_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Ì•çùÿÿÿÿ8¢Ä¼¸1
+q	java:S116"PRename this field "min_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯¤¶üÿÿÿÿ8¢Ä¼¸1
+l	java:S116"PRename this field "max_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô–é´8¢Ä¼¸1
+l	java:S116"PRename this field "max_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é¡ªÌ8¢Ä¼¸1
+v	java:S116"ZRename this field "list_of_bullets" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦¼«î8¢Ä¼¸1
+n	java:S116"RRename this field "rw_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İë°®8¢Ä¼¸1
+z	java:S116"YRename this field "bullet_counter" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡¸Ãşÿÿÿÿ8¢Ä¼¸1
+~	java:S116"]Rename this field "vertical_direction" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓŞñÏùÿÿÿÿ8¢Ä¼¸1
+j	java:S100/"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£€ù8¢Ä¼¸1
+o	java:S1004"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñŒëîÿÿÿÿÿ8ªÄ¼¸1
+o	java:S100E"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚—ŞÄúÿÿÿÿ8²Ä¼¸1
+o	java:S100V"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ø–üÿÿÿÿ8´Ä¼¸1
+j	java:S100e"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­öí8¶Ä¼¸1
+j	java:S100k"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ÆÌâ8¶Ä¼¸1
+j	java:S100r"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Şò·Ø8·Ä¼¸1
+i	java:S100z"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô¡Õ&8·Ä¼¸1
+k	java:S100€"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÄ¢²8¸Ä¼¸1
+j	java:S100Œ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïàø38¸Ä¼¸1
+j	java:S100—"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ˆ™\8¸Ä¼¸1
+p	java:S100¢"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş»½ÿÿÿÿÿ8ºÄ¼¸1
+k	java:S100Ê"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ’ î8ÂÄ¼¸1
+D	java:S131ò""Add a default case to this switch.(Ò“ÿšùÿÿÿÿ8ÂÄ¼¸1
+k	java:S100‰"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§Ò¿ª8ÂÄ¼¸1
+k	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø³ƒ‰8ÂÄ¼¸1
+p	java:S100–"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—‹Öïûÿÿÿÿ8ÂÄ¼¸1
+k	java:S100œ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡˜¨–8ÂÄ¼¸1
+p	java:S100 "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üá‹Ãøÿÿÿÿ8ÂÄ¼¸1
 M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8°‚Ú˜¶1
-O
-java:S1068"2Remove this unused "long_attack_cd" private field.(Âõ»«8°‚Ú˜¶1
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ÂÄ¼¸1
+R
+java:S1068"0Remove this unused "x_cord_start" private field.(üÌ©Ëşÿÿÿÿ8Ã¡’¼¸1
+M
+java:S1068"0Remove this unused "y_cord_start" private field.(Œª–µ8Ã¡’¼¸1

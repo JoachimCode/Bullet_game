@@ -1,16 +1,14 @@
 
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ä¼ÿÿÿÿÿ8‹™ª—¶1
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹âÊ÷8ÖƒÀ—¶1
-Z
-java:S1854"=Remove this useless assignment to local variable "game_time".(¹âÊ÷8ôƒÀ—¶1
-X	java:S125	"<This block of commented-out lines of code should be removed.(ø·±8‹™ª—¶1
-K
-java:S1481".Remove this unused "game_time" local variable.(¹âÊ÷8ÿƒÀ—¶1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ä¼ÿÿÿÿÿ8³áø¸¸1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂªÓ´øÿÿÿÿ8ø¸†Ÿº1
+X
+java:S1854";Remove this useless assignment to local variable "buttons".(ü–›ˆ8¹†Ÿº1
+X	java:S125	"<This block of commented-out lines of code should be removed.(ø·±8Àáø¸¸1
+I
+java:S1481",Remove this unused "buttons" local variable.(ü–›ˆ8”¹†Ÿº1
 k
-java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(”È÷üÿÿÿÿ8€„À—¶1
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(”È÷üÿÿÿÿ8–¹†Ÿº1
 H
-java:S1602",Remove useless curly braces around statement(°›ìU8„À—¶1
+java:S1602",Remove useless curly braces around statement(°›ìU8–¹†Ÿº1
 ]
-java:S1612"AReplace this lambda with method reference 'screen::requestFocus'.(°›ìU8„À—¶1
-B
-java:S1128"%Remove this unused import 'java.awt'.(ï´µ©8¹å¿—¶1
+java:S1612"AReplace this lambda with method reference 'screen::requestFocus'.(°›ìU8–¹†Ÿº1
